@@ -7,7 +7,7 @@ from combo_box import ComboBox
 from components import Components
 pygame.init()
 
-class View():
+class SLLView():
     def __init__(self, screen):
         self.screen = screen
         self.sll = SingleLinkedList()

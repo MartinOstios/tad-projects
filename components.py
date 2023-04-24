@@ -7,7 +7,7 @@ class Components():
         self.WHITE = (255, 255, 255)
         self.GREEN = (134, 181, 129)
         self.RED = (255, 0,   0)
-        self.BLUE = (0, 0, 255)
+        self.BLUE = (96, 151, 240)
         self.GRAY = (170, 170, 170)
         self.LIGHT_BLUE = (161, 163, 212)
     

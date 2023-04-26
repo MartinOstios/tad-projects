@@ -51,14 +51,15 @@ class SLLView():
             if self.control:
                 self.clickOnInitMain()
             else:
-                self.clickOnMain()
-                self.clickOnButton()
+                if self.alert_status != 1:
+                    self.clickOnMain()
+                    self.clickOnButton()
+                    
         if not pygame.mouse.get_pressed()[0]:
             self.clicked = False
         self.drawList()
         self.drawMain()
-    
-        if (self.alert.draw(self.components.getText("¡Alerta!", 32, True, self.components.WHITE, None, "Consolas"), self.components.getText(self.alert_text, 22, False, self.components.WHITE, None, "Consolas"), self.components.getText("Aceptar", 22, False, self.components.BLACK, None, "Consolas"), self.alert_status)):
+        if (self.alert.draw("¡Alerta!", self.alert_text, "Aceptar", self.alert_status)):
                 self.alert_status = 0
 
     def drawMain(self):
@@ -150,7 +151,9 @@ class SLLView():
                 elif arg_count == 2:
                     if arg_names[0] == 'value':
                         if superhero_selected != None:
-                            exec_func(superhero_selected.split("_")[1].capitalize())
+                            if not exec_func(superhero_selected.split("_")[1].capitalize()):
+                                self.alert_status = 1
+                                self.alert_text = "Lista llena"
                         else:
                             self.alert_status = 1
                             self.alert_text = "Seleccione un superheroe"

@@ -78,3 +78,4 @@ class ComboBox():
     def resetCombo(self):
         self.selected_option = self.initial_selected_value
         self.selected_index = -1
+    

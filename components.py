@@ -20,7 +20,7 @@ class Components():
         self.screen.blit(self.getText(text, size, bold, color,background, font_type), (pos_x, pos_y))
 
     def drawImage(self, url, pos_x, pos_y):
-        image = pygame.image.load(url)
+        image = pygame.image.load(url).convert_alpha()
         self.screen.blit(image, (pos_x, pos_y))
 
     def drawButton(self, text, button_color, pos_x, pos_y, width, height, border, border_radius, text_size, text_bold, text_color, text_font):

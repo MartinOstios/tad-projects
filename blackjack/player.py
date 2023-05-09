@@ -11,6 +11,7 @@ class Player:
         self.cards = []
         self.score = 0
         self.playing = False
+        self.winner = None
         self.components = Components(self.screen)
     
     def add_card(self, card):
@@ -32,6 +33,14 @@ class Player:
                 if self.score > 21:
                     pygame.draw.line(self.screen, self.components.BLACK, (self.x + 35, self.y - 30 + 13), (self.x + 35 + 100, self.y - 30 + 13), 3)
         self.components.drawText(str(self.score), self.components.BLACK, None, self.x + 150, self.y - 30, "Arial", 22, False)
+        if self.winner != None:
+            if self.winner == 1:
+                self.components.drawText("¡Ganaste!", self.components.GREEN, self.components.BLACK, self.x + 20, self.y - 50, "Arial", 22, False)
+            elif self.winner == 2:
+                self.components.drawText("Perdiste", self.components.RED, self.components.BLACK, self.x + 20, self.y - 50, "Arial", 22, False)
+            elif self.winner == 3:
+                self.components.drawText("Empate", self.components.BLUE, self.components.BLACK, self.x + 20, self.y - 50, "Arial", 22, False)
+
         for card in self.cards:
             card.draw()
     

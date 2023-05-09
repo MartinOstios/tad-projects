@@ -37,3 +37,6 @@ class Card:
             return 11
         else:
             return int(self.character)
+    
+    def set_value(self, value):
+        pass

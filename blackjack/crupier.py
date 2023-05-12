@@ -57,7 +57,6 @@ class Crupier:
         self.actual_shift += 2
 
     def draw(self):
-        self.components.drawText("Shift: " + str(self.actual_shift), self.components.BLACK, None, 26, 120, "Arial", 22, True)
         for player in self.players:
             player.draw()
         self.play()
@@ -103,7 +102,8 @@ class Crupier:
     def play(self):
         for card in self.cards:
             card.draw()
-        self.components.drawText("Crupier", self.components.BLACK, None, self.x + 35, self.y - 30, "Arial", 22, False)
+        self.components.drawText("Crupier", self.components.BLACK, None, self.x + 65, self.y - 30, "Arial", 22, False)
+        pygame.draw.rect(self.screen, self.components.BLACK, (self.x, self.y, 200, 126), 3, 1)
     
     def addCard(self, card):
         gap = 32*len(self.cards)

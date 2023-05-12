@@ -11,7 +11,7 @@ class Components():
         self.GRAY = (170, 170, 170)
         self.LIGHT_BLUE = (161, 163, 212)
     
-    def getText(self, text, size, bold, color, background_color, font_type):
+    def getText(self, text, size, bold, color, background_color, font_type) -> pygame.Surface:
         font = pygame.font.SysFont(font_type, size, bold)
         render_text = font.render(text, True, color, background_color)
         return render_text

@@ -14,7 +14,7 @@ class Superheroes:
         pygame.display.set_caption("TAD")
         self.components = Components(self.screen)
         self.footer = Footer(self.screen)
-        self.menu = Menu(self.screen, {"SLL": "imgs/list-outline.png", "DLL": "imgs/list-outline.png", "Pilas y colas": "imgs/list-outline.png", "Árboles": "imgs/tree-solid.png", "Grafos": "imgs/circle-nodes-solid.png"}, self.components.GREEN, 50, "Consolas", 22, self.components.WHITE)
+        self.menu = Menu(self.screen, {"SLL": "imgs/list-outline.png", "Pilas": "imgs/list-outline.png", "Solitaire": "imgs/list-outline.png", "Grafos": "imgs/circle-nodes-solid.png"}, self.components.GREEN, 50, "Consolas", 22, self.components.WHITE)
         self.sll_view = SLLView(self.screen)
         self.solitaire_view = SolitaireView(self.screen)
         self.blackjack_view = Blackjack(self.screen)

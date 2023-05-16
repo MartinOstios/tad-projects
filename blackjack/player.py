@@ -21,7 +21,12 @@ class Player:
         card.setX(self.x + gap)
         card.setY(self.y)
         self.cards.append(card)
-        self.increase_score(card)
+        if self.score + card.value > 21:
+            for card in self.cards:
+                if card.value == 11:
+                    card.value = 1
+        self.increase_score()
+        
 
     
     def draw(self):
@@ -44,7 +49,7 @@ class Player:
                         self.player_rect.y - 30 + (text_render.get_height() / 2)),
                         (self.player_rect.centerx + (text_render.get_width() / 2),
                         self.player_rect.y - 30 + (text_render.get_height() / 2)), 2)
-        #self.components.drawText(str(self.score), self.components.BLACK, None, self.x + 150, self.y - 30, "Arial", 22, False)
+        self.draw_score()
         if self.winner != None:
             if self.winner == 1:
                 self.draw_result_message("¡Ganaste!")
@@ -53,8 +58,8 @@ class Player:
             elif self.winner == 3:
                 self.draw_result_message("Empate")
     
-    def increase_score(self, card):
-        self.score += card.get_value()
+    def increase_score(self):
+        self.score = sum([card.value for card in self.cards])
 
     def draw_result_message(self, message):
         text_render = self.components.getText(message, 22, False, self.components.WHITE, None, "Arial")
@@ -65,4 +70,14 @@ class Player:
         alert_rect = pygame.Rect(x, y, width, height)
         pygame.draw.rect(self.screen, self.components.BLACK, alert_rect, 0, 5)
         self.screen.blit(text_render, (self.player_rect.centerx - (text_render.get_width() / 2), self.player_rect.centery - (text_render.get_height() / 2)))
+
+    def draw_score(self):
+        text_render = self.components.getText(str(self.score), 40, False, self.components.WHITE, None, "Arial")
+        x = self.player_rect.midbottom[0] - (text_render.get_width() / 2) - 10
+        y = self.player_rect.midbottom[1] + 30 - (text_render.get_height() / 2) - 5
+        width = text_render.get_width() + 20
+        height = text_render.get_height() + 10
+        alert_rect = pygame.Rect(x, y, width, height)
+        pygame.draw.rect(self.screen, self.components.BLACK, alert_rect, 0, 5)
+        self.screen.blit(text_render, (self.player_rect.midbottom[0] - (text_render.get_width() / 2), self.player_rect.midbottom[1] + 30 - (text_render.get_height() / 2)))
 

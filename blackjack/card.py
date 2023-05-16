@@ -7,9 +7,11 @@ class Card:
         self.x = x
         self.y = y
         self.character = character
+        self.value = 0
         self.figure = figure
         self.visible = True
         self.components = Components(self.screen)
+        self.set_value()
     
     def draw(self):
         try:
@@ -26,17 +28,12 @@ class Card:
 
     def setY(self, y):
         self.y = y
-    
-    def move(self):
-        pass
-    
-    def get_value(self):
+
+    def set_value(self):
         if self.character == 'j' or self.character == 'q' or self.character == 'k' or self.character == '10':
-            return 10
+            self.value = 10
         elif self.character == 'a':
-            return 11
+            self.value = 11
         else:
-            return int(self.character)
+            self.value = int(self.character)
     
-    def set_value(self, value):
-        pass

@@ -1,14 +1,14 @@
 import pygame, time, threading
 from blackjack.player import Player
 from components import Components
-
+from blackjack.stack import Stack
 pygame.init()
 
 
 class Crupier:
-    def __init__(self, screen, stack, x, y):
+    def __init__(self, screen, x, y):
         self.screen = screen
-        self.stack = stack
+        self.stack = Stack(self.screen, 52)
         self.x = x
         self.y = y
         self.cards = []
@@ -19,9 +19,8 @@ class Crupier:
         self.components = Components(self.screen)
 
         # Buttons rect
-        self.double_bet_rect = pygame.Rect(363, 564, 141, 37)
-        self.ask_rect = pygame.Rect(518, 564, 141, 37)
-        self.stand_rect = pygame.Rect(672, 564, 141, 37)
+        self.ask_rect = pygame.Rect(448, 564, 141, 37)
+        self.stand_rect = pygame.Rect(602, 564, 141, 37)
         self.click_on_bet = False
         self.click_on_ask = False
         self.click_on_stand = False
@@ -34,7 +33,9 @@ class Crupier:
         self.threads = []
         self.threads_finish = []
         self.crupier_task_finished = pygame.USEREVENT
-        self.crupier_task = threading.Thread(target=self.distribute_own_cards)
+        #self.crupier_task = threading.Thread(target=self.distribute_own_cards)
+        self.crupier_reset_task_finished = pygame.USEREVENT
+        #self.crupier_reset_task = threading.Thread(target=self.pass_round)
 
     def create_players(self):
         player1 = Player(self.screen, 816, 300, "Jugador 1")
@@ -67,11 +68,14 @@ class Crupier:
         if self.actual_shift == 0:
             if not self.crupier_bool:
                 self.crupier_bool = True
-                self.crupier_task.start()
+                self.threads.append(threading.Thread(target=self.distribute_own_cards))         
+                self.threads[-1].start()
             # Mostrar ganadores
             if self.continue_game:
                 self.continue_game = False
                 self.game_winners()
+                self.threads.append(threading.Thread(target=self.pass_round))         
+                self.threads[-1].start()
         if self.actual_shift > 0:
             player = self.players[self.actual_shift - 1]
             if player.score != 21:
@@ -110,18 +114,40 @@ class Crupier:
         card.setX(self.x + gap)
         card.setY(self.y)
         self.cards.append(card)
-        self.score += card.get_value()
+        if self.score + card.value > 21:
+            for card in self.cards:
+                if card.value == 11:
+                    print("Cambiando score de A")
+                    card.value = 1
+        self.score = sum([card.value for card in self.cards])
     
     def distribute_own_cards(self):
         time.sleep(2)
+        print("Distribuyendo cartas, score: " + str(self.score))
         self.cards[1].visible = True
         while self.score < 16:
             time.sleep(2)
             card = self.stack.remove_card()
             self.addCard(card)
-        pygame.event.post(pygame.event.Event(self.crupier_task_finished))
         self.continue_game = True
-    
+        pygame.event.post(pygame.event.Event(self.crupier_task_finished))
+
+    def pass_round(self):
+        time.sleep(5)
+        for player in self.players:
+            player.cards.clear()
+            player.winner = None
+            player.score = 0
+        self.cards.clear()
+        self.score = 0
+        self.stack = Stack(self.screen, 52)
+        self.actual_shift = -1
+        time.sleep(2)
+        self.distribute()
+        self.continue_game = False
+        self.crupier_bool = False
+        pygame.event.post(pygame.event.Event(self.crupier_reset_task_finished))
+
     def game_winners(self):
         for player in self.players:
             if self.score <= 21:

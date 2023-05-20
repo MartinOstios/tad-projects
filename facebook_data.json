@@ -1,0 +1,122 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jaime Jones",
+      "email": "Jaime Jones@example.com",
+      "birthdate": "1990-01-01",
+      "profile_image_url": "graph/imgs/male/13.png",
+      "liked_photos": [],
+      "family": [],
+      "groups": [],
+      "communities": []
+    },
+    {
+      "id": 2,
+      "name": "Michael Morgan",
+      "email": "Michael Morgan@example.com",
+      "birthdate": "1990-01-01",
+      "profile_image_url": "graph/imgs/male/16.png",
+      "liked_photos": [],
+      "family": [
+        {
+          "name": "Jaime Jones",
+          "relation": "Mother"
+        }
+      ],
+      "groups": [],
+      "communities": []
+    },
+    {
+      "id": 3,
+      "name": "Austin Thomas",
+      "email": "Austin Thomas@example.com",
+      "birthdate": "1990-01-01",
+      "profile_image_url": "graph/imgs/female/16.png",
+      "liked_photos": [],
+      "family": [
+        {
+          "name": "Michael Morgan",
+          "relation": "Sibling"
+        },
+        {
+          "name": "Jaime Jones",
+          "relation": "Sibling"
+        }
+      ],
+      "groups": [],
+      "communities": []
+    },
+    {
+      "id": 4,
+      "name": "Julie Sims",
+      "email": "Julie Sims@example.com",
+      "birthdate": "1990-01-01",
+      "profile_image_url": "graph/imgs/male/14.png",
+      "liked_photos": [],
+      "family": [
+        {
+          "name": "Austin Thomas",
+          "relation": "Mother"
+        },
+        {
+          "name": "Michael Morgan",
+          "relation": "Father"
+        }
+      ],
+      "groups": [],
+      "communities": []
+    },
+    {
+      "id": 5,
+      "name": "Shawn Jones",
+      "email": "Shawn Jones@example.com",
+      "birthdate": "1990-01-01",
+      "profile_image_url": "graph/imgs/male/1.png",
+      "liked_photos": [],
+      "family": [
+        {
+          "name": "Jaime Jones",
+          "relation": "Mother"
+        },
+        {
+          "name": "Austin Thomas",
+          "relation": "Sibling"
+        },
+        {
+          "name": "Julie Sims",
+          "relation": "Father"
+        }
+      ],
+      "groups": [],
+      "communities": []
+    }
+  ],
+  "relationships": {
+    "1": [
+      5,
+      2,
+      3,
+      4
+    ],
+    "2": [
+      4,
+      5
+    ],
+    "3": [
+      5,
+      1,
+      2
+    ],
+    "4": [
+      1,
+      5,
+      3,
+      2
+    ],
+    "5": [
+      3,
+      1
+    ]
+  }
+}

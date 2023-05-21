@@ -12,26 +12,31 @@ from PIL import Image
 from images_api import ImagesApi
 from components import Components
 from side_menu import SideMenu
+from drawer import Drawer
 pygame.init()
 fake = Faker()
 generator = ImagesApi()
+
+
 class GraphView:
     def __init__(self):
+        self.USERS_QUANTITY = 20
+        self.FRIENDS_QUANTITY = 3
+        self.FAMILY_QUANTITY = 5
+        self.generate_data()
         # Configuración de la ventana
         self.WINDOW_WIDTH = 1400
         self.WINDOW_HEIGHT = 600
         self.BACKGROUND_COLOR = (255, 255, 255)
         self.users = {}
         self.relationships = {}
-        self.node_positions = {}
         self.screen = pygame.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
         pygame.display.set_caption("Red de Usuarios de Facebook")
         self.clock = pygame.time.Clock()
         self.components = Components(self.screen)
         self.load_json()
-        self.set_positions()
-        print(self.users)
-        self.menu = SideMenu(self.screen, self.WINDOW_WIDTH - 200, 0, 200, self.WINDOW_HEIGHT, self.components.GRAY, self.users, self.relationships)
+        self.drawer = Drawer(self.screen, 0, 0, self.WINDOW_WIDTH - 200, self.WINDOW_HEIGHT, self.users, self.relationships)
+        self.menu = SideMenu(self.screen, self.WINDOW_WIDTH - 200, 0, 200, self.WINDOW_HEIGHT, self.components.GRAY, self.users, self.relationships, self.drawer)
 
     def run(self):
         while True:
@@ -67,52 +72,81 @@ class GraphView:
     def draw(self):
         # Dibujar las relaciones de amistad
         self.menu.draw()
-        for user_id, friends in self.relationships.items():
-            start_pos = self.node_positions.get(int(user_id))  # Verificar si la clave existe en node_positions
-            if start_pos is not None:
-                for friend_id in friends:
-                    end_pos = self.node_positions.get(friend_id)  # Verificar si la clave existe en node_positions
-                    if end_pos is not None:
-                        pygame.draw.line(self.screen, (0, 0, 0), start_pos, end_pos, 2)
+        self.drawer.draw()
+    
+    def generate_data(self):
+        # Generar datos falsos y escribir el archivo JSON
+        data, graph = self.generate_fake_data(self.USERS_QUANTITY)
+        write_json_file(data, "facebook_data.json")
+        # Leer y mostrar los datos del archivo JSON
+        read_facebook_data("facebook_data.json")
+        # Ejecutar la función principal
+    
+    def generate_profile_image(self):
+        style = random.choice(["female", "male"])
+        url = generator.get_image(style)
+        return url
+    
+    def generate_fake_data(self, num_users):
+        users = []
+        relationships = {}
 
-        # Dibujar los nodos
-        for user in self.users:
-            pos = self.node_positions.get(user["id"])  # Verificar si la clave existe en node_positions
-            if pos is not None:
-                x, y = pos
-                profile_image = user.get("profile_image")
-                if profile_image is not None:
-                    image_width, image_height = profile_image.get_size()
-                    image_x = x - image_width // 2
-                    image_y = y - image_height // 2
-                    text_render = self.components.getText(user["name"], 15, False, self.components.WHITE, None, "Arial")
-                    name_rect = pygame.Rect(image_x + image_width // 2 - (text_render.get_width()/2) - 5, image_y + image_height // 2 + 25, text_render.get_width() + 10, text_render.get_height() + 5)
-                    self.screen.blit(profile_image, (image_x, image_y))
-                pygame.draw.rect(self.screen, self.components.BLACK, name_rect, 0, 5)
-                self.screen.blit(text_render, (name_rect.x + (name_rect.width - text_render.get_width())/2, name_rect.y + (name_rect.height - text_render.get_height())/2))
+        for i in range(num_users):
+            try:
+                name = fake.name()
+                profile_image_url = self.generate_profile_image()
+                user = {
+                    "id": i + 1,
+                    "name": name,
+                    "email": f"{name}@example.com",
+                    "birthdate": "1990-01-01",
+                    "profile_image_url": profile_image_url,
+                    "liked_photos": [],
+                    "family": [],
+                    "groups": [],
+                    "communities": []
+                }
+                users.append(user)
+                num_family_members = self.FAMILY_QUANTITY
+                num_family_members = min(num_family_members, len(users))
+                family_members = random.sample(users, num_family_members)
+                for family_member in family_members:
+                    if family_member["name"] != user["name"]:
+                        member = {
+                            "id": family_member["id"],
+                            "name": family_member["name"],
+                            "relation": random.choice(["Father", "Mother", "Sibling"])
+                        }
+                    else:
+                        member = None
+                    if member is not None:
+                        user["family"].append(member)
+            except Exception as e:
+                print(f"Error al generar el usuario {i + 1}: {e}")
 
-    def set_positions(self):
-        # Calcular las coordenadas de los nodos
-        x_spacing = (self.WINDOW_WIDTH - 200) // (len(self.users) + 1)
-        y_spacing = self.WINDOW_HEIGHT // (len(self.users) + 1)
-        y_positions = [random.randint(y_spacing, self.WINDOW_HEIGHT - y_spacing) for _ in range(len(self.users))]
-        for i, user in enumerate(self.users):
-            x = (i + 1) * x_spacing
-            y = y_positions[i]
-            self.node_positions[user["id"]] = (x, y)
+        graph = nx.DiGraph()
 
-        '''
-        # Restablecer la posición vertical de los nodos
-        for user in self.users:
-            pos = self.node_positions.get(user["id"])
-            if pos is not None:
-                _, y = pos
-                # Obtener la posición original del nodo
-                y = y_positions[user["id"] - 1]  
-                self.node_positions[user["id"]] = (x, y)
-        '''
+        for user in users:
+            graph.add_node(user["id"], data=user)
+
+        for user in users:
+            # ----------------- Cantidad de amigos -----------------------
+            num_friends = random.randint(1, self.FRIENDS_QUANTITY)
+            friends = random.sample(users, num_friends)
+            # Filtrar la lista para que no se añada a si mismo como amigo
+            relationship_ids = list(filter(lambda x: not x == user["id"], [friend["id"] for friend in friends]))
+            relationships[user["id"]] = relationship_ids
+            for friend in friends:
+                graph.add_edge(user["id"], friend["id"])
+        data = {
+            "users": users,
+            "relationships": relationships
+        }
+
+        return data, graph
 
 
+'''
 def generate_profile_image_url(name):
     # Generar una URL de imagen de perfil falsa con un avatar generado
     style = random.choice(["female", "male"])
@@ -125,70 +159,10 @@ def generate_profile_image_url(name):
     if "image" not in content_type:
         raise Exception("La respuesta no es una imagen válida.")
     return url
-
-def generate_profile_image():
-    style = random.choice(["female", "male"])
-    url = generator.get_image(style)
-    return url
+'''
 
 
-def generate_fake_data(num_users):
-    users = []
-    relationships = {}
 
-    for i in range(num_users):
-        try:
-            name = fake.name()
-            profile_image_url = generate_profile_image()
-            user = {
-                "id": i + 1,
-                "name": name,
-                "email": f"{name}@example.com",
-                "birthdate": "1990-01-01",
-                "profile_image_url": profile_image_url,
-                "liked_photos": [],
-                "family": [],
-                "groups": [],
-                "communities": []
-            }
-            users.append(user)
-            num_family_members = 3
-            num_family_members = min(num_family_members, len(users))
-            family_members = random.sample(users, num_family_members)
-            for family_member in family_members:
-                if family_member["name"] != user["name"]:
-                    member = {
-                        "name": family_member["name"],
-                        "relation": random.choice(["Father", "Mother", "Sibling"])
-                    }
-                else:
-                    member = None
-                if member is not None:
-                    user["family"].append(member)
-        except Exception as e:
-            print(f"Error al generar el usuario {i + 1}: {e}")
-
-    graph = nx.DiGraph()
-
-    for user in users:
-        graph.add_node(user["id"], data=user)
-
-    for user in users:
-        # ----------------- Cantidad de amigos -----------------------
-        num_friends = random.randint(1, 5)
-        #data = list(filter(lambda x: x["id"] in friends, [user for user in self.users]))
-        friends = random.sample(users, num_friends)
-        friends = filter(lambda x: not x["id"] == user["id"], friends)
-        relationship_ids = [friend["id"] for friend in friends]
-        relationships[user["id"]] = relationship_ids
-        for friend in friends:
-            graph.add_edge(user["id"], friend["id"])
-    data = {
-        "users": users,
-        "relationships": relationships
-    }
-
-    return data, graph
 
 def write_json_file(data, filename):
     with open(filename, "w") as file:
@@ -225,11 +199,5 @@ def read_facebook_data(filename):
 
 
 if __name__ == "__main__":
-    # Generar datos falsos y escribir el archivo JSON
-    data, graph = generate_fake_data(5)
-    write_json_file(data, "facebook_data.json")
-    # Leer y mostrar los datos del archivo JSON
-    read_facebook_data("facebook_data.json")
-    # Ejecutar la función principal
     graph = GraphView()
     graph.run()

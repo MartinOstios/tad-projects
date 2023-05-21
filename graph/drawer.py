@@ -26,7 +26,7 @@ class Drawer:
                 for friend_id in friends:
                     end_pos = self.node_positions.get(friend_id)  # Verificar si la clave existe en node_positions
                     if end_pos is not None:
-                        pygame.draw.line(self.screen, (0, 0, 0), start_pos, end_pos, 2)
+                        pygame.draw.line(self.screen, (0, 0, 0), start_pos, end_pos, 4)
     
     def draw_nodes(self):
         for user in self.users:
@@ -46,7 +46,7 @@ class Drawer:
     
     def set_positions(self):
         # Calcular las coordenadas de los nodos
-        x_spacing = (self.width) // (len(self.users) + 1)
+        x_spacing = self.width // (len(self.users) + 1)
         y_spacing = self.height // (len(self.users) + 1)
         y_positions = [random.randint(y_spacing, self.height - y_spacing) for _ in range(len(self.users))]
         for i, user in enumerate(self.users):

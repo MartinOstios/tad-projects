@@ -116,7 +116,7 @@ class SideMenu:
         # Recorre la lista data, que tiene objetos usuario y obtiene los nombres de estos
         names = [user["name"] for user in data]
         # Actualiza el combo box
-        self.combo_friends_lower.updateOptions(names)
+        self.combo_friends_lower.updateOptions(names[0:6]) # Limitado a 6 amigos en la lista
     
     def updateGraph(self, user, graph):
         print(f"Se debe dibujar el grafo {graph} respecto al usuario {user}")

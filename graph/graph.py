@@ -4,6 +4,7 @@ import json
 import random
 import requests
 import urllib.parse
+from datetime import datetime, timedelta
 import pygame
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -20,9 +21,9 @@ generator = ImagesApi()
 
 class GraphView:
     def __init__(self):
-        self.USERS_QUANTITY = 20
+        self.USERS_QUANTITY = 5
         self.FRIENDS_QUANTITY = 3
-        self.FAMILY_QUANTITY = 5
+        self.FAMILY_QUANTITY = 3
         self.generate_data()
         # Configuración de la ventana
         self.WINDOW_WIDTH = 1400
@@ -70,7 +71,8 @@ class GraphView:
                 print(f"Error al cargar la imagen de perfil para el usuario {user['id']}: {e}")
 
     def draw(self):
-        # Dibujar las relaciones de amistad
+        self.components.drawImage("graph/imgs/logo-facebook.png", 18, 12)
+        self.components.drawText("Estos datos son fake y se leen a través de un archivo JSON", self.components.BLACK, None, 94, 35, "Arial", 16, False)
         self.menu.draw()
         self.drawer.draw()
     
@@ -87,6 +89,17 @@ class GraphView:
         url = generator.get_image(style)
         return url
     
+    def generate_email(self, name):
+        return name.split(" ")[0] + "_" + name.split(" ")[1] + "@" + random.choice(["gmail.com", "hotmail.com", "autonoma.edu.co", "yahoo.com"])
+
+    def generate_date(self, start, end, fmt):
+        s = datetime.strptime(start, fmt)
+        e = datetime.strptime(end, fmt)
+
+        delta = e - s
+
+        return s + timedelta(days=(random.random() * delta.days))
+    
     def generate_fake_data(self, num_users):
         users = []
         relationships = {}
@@ -95,11 +108,14 @@ class GraphView:
             try:
                 name = fake.name()
                 profile_image_url = self.generate_profile_image()
+                email = self.generate_email(name.lower())
+                date = self.generate_date("01/01/1970", "01/01/2010", "%d/%m/%Y")
+                date = str(date).split(" ")[0]
                 user = {
                     "id": i + 1,
                     "name": name,
-                    "email": f"{name}@example.com",
-                    "birthdate": "1990-01-01",
+                    "email": email,
+                    "birthdate": date,
                     "profile_image_url": profile_image_url,
                     "liked_photos": [],
                     "family": [],
@@ -112,22 +128,23 @@ class GraphView:
                 family_members = random.sample(users, num_family_members)
                 for family_member in family_members:
                     if family_member["name"] != user["name"]:
-                        member = {
+                        user["family"].append({
                             "id": family_member["id"],
                             "name": family_member["name"],
                             "relation": random.choice(["Father", "Mother", "Sibling"])
-                        }
-                    else:
-                        member = None
-                    if member is not None:
-                        user["family"].append(member)
+                        })
+                        # 3.b
+                        family_member["family"].append({
+                            "id": user["id"],
+                            "name": user["name"],
+                            "relation": "Familiar"
+                        })
             except Exception as e:
                 print(f"Error al generar el usuario {i + 1}: {e}")
 
         graph = nx.DiGraph()
 
-        for user in users:
-            graph.add_node(user["id"], data=user)
+        
 
         for user in users:
             # ----------------- Cantidad de amigos -----------------------
@@ -135,9 +152,16 @@ class GraphView:
             friends = random.sample(users, num_friends)
             # Filtrar la lista para que no se añada a si mismo como amigo
             relationship_ids = list(filter(lambda x: not x == user["id"], [friend["id"] for friend in friends]))
+            #lists = list(filter(lambda x: x in relationship_ids , [relationship for relationship in relationships]))
+            #print(relationships)
+            #print(lists)
+
             relationships[user["id"]] = relationship_ids
             for friend in friends:
                 graph.add_edge(user["id"], friend["id"])
+        #for user in users:
+
+
         data = {
             "users": users,
             "relationships": relationships

@@ -2,27 +2,63 @@
   "users": [
     {
       "id": 1,
-      "name": "Jessica Blair",
-      "email": "Jessica Blair@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/2.png",
+      "name": "Amanda Pierce",
+      "email": "amanda_pierce@hotmail.com",
+      "birthdate": "1987-06-06",
+      "profile_image_url": "graph/imgs/female/14.png",
       "liked_photos": [],
-      "family": [],
+      "family": [
+        {
+          "id": 2,
+          "name": "Adam Davis",
+          "relation": "Familiar"
+        },
+        {
+          "id": 3,
+          "name": "Madeline Cohen",
+          "relation": "Familiar"
+        },
+        {
+          "id": 4,
+          "name": "Catherine Rich",
+          "relation": "Familiar"
+        },
+        {
+          "id": 5,
+          "name": "Drew Brown",
+          "relation": "Familiar"
+        }
+      ],
       "groups": [],
       "communities": []
     },
     {
       "id": 2,
-      "name": "Charles Johnson",
-      "email": "Charles Johnson@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/female/9.png",
+      "name": "Adam Davis",
+      "email": "adam_davis@yahoo.com",
+      "birthdate": "1996-04-16",
+      "profile_image_url": "graph/imgs/female/7.png",
       "liked_photos": [],
       "family": [
         {
           "id": 1,
-          "name": "Jessica Blair",
+          "name": "Amanda Pierce",
           "relation": "Sibling"
+        },
+        {
+          "id": 3,
+          "name": "Madeline Cohen",
+          "relation": "Familiar"
+        },
+        {
+          "id": 4,
+          "name": "Catherine Rich",
+          "relation": "Familiar"
+        },
+        {
+          "id": 5,
+          "name": "Drew Brown",
+          "relation": "Familiar"
         }
       ],
       "groups": [],
@@ -30,20 +66,20 @@
     },
     {
       "id": 3,
-      "name": "Michelle Moore",
-      "email": "Michelle Moore@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/8.png",
+      "name": "Madeline Cohen",
+      "email": "madeline_cohen@gmail.com",
+      "birthdate": "2001-11-09",
+      "profile_image_url": "graph/imgs/female/8.png",
       "liked_photos": [],
       "family": [
         {
           "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Sibling"
+          "name": "Adam Davis",
+          "relation": "Father"
         },
         {
           "id": 1,
-          "name": "Jessica Blair",
+          "name": "Amanda Pierce",
           "relation": "Father"
         }
       ],
@@ -52,26 +88,21 @@
     },
     {
       "id": 4,
-      "name": "Nicole Daniels",
-      "email": "Nicole Daniels@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/female/9.png",
+      "name": "Catherine Rich",
+      "email": "catherine_rich@autonoma.edu.co",
+      "birthdate": "2007-09-06",
+      "profile_image_url": "graph/imgs/female/3.png",
       "liked_photos": [],
       "family": [
         {
           "id": 1,
-          "name": "Jessica Blair",
-          "relation": "Sibling"
-        },
-        {
-          "id": 3,
-          "name": "Michelle Moore",
+          "name": "Amanda Pierce",
           "relation": "Father"
         },
         {
           "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Father"
+          "name": "Adam Davis",
+          "relation": "Mother"
         }
       ],
       "groups": [],
@@ -79,556 +110,21 @@
     },
     {
       "id": 5,
-      "name": "Ryan Mejia",
-      "email": "Ryan Mejia@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/13.png",
+      "name": "Drew Brown",
+      "email": "drew_brown@hotmail.com",
+      "birthdate": "1994-04-17",
+      "profile_image_url": "graph/imgs/female/16.png",
       "liked_photos": [],
       "family": [
         {
-          "id": 3,
-          "name": "Michelle Moore",
-          "relation": "Mother"
-        },
-        {
           "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Father"
-        },
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
+          "name": "Adam Davis",
           "relation": "Mother"
         },
         {
           "id": 1,
-          "name": "Jessica Blair",
+          "name": "Amanda Pierce",
           "relation": "Father"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 6,
-      "name": "Traci Wilson",
-      "email": "Traci Wilson@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/18.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 5,
-          "name": "Ryan Mejia",
-          "relation": "Mother"
-        },
-        {
-          "id": 3,
-          "name": "Michelle Moore",
-          "relation": "Sibling"
-        },
-        {
-          "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Sibling"
-        },
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
-          "relation": "Father"
-        },
-        {
-          "id": 1,
-          "name": "Jessica Blair",
-          "relation": "Sibling"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 7,
-      "name": "Donald Hahn",
-      "email": "Donald Hahn@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/4.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Mother"
-        },
-        {
-          "id": 6,
-          "name": "Traci Wilson",
-          "relation": "Mother"
-        },
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
-          "relation": "Mother"
-        },
-        {
-          "id": 3,
-          "name": "Michelle Moore",
-          "relation": "Father"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 8,
-      "name": "Eric Pittman",
-      "email": "Eric Pittman@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/14.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 5,
-          "name": "Ryan Mejia",
-          "relation": "Father"
-        },
-        {
-          "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Sibling"
-        },
-        {
-          "id": 7,
-          "name": "Donald Hahn",
-          "relation": "Mother"
-        },
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
-          "relation": "Father"
-        },
-        {
-          "id": 6,
-          "name": "Traci Wilson",
-          "relation": "Mother"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 9,
-      "name": "Christopher Marsh",
-      "email": "Christopher Marsh@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/13.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
-          "relation": "Sibling"
-        },
-        {
-          "id": 8,
-          "name": "Eric Pittman",
-          "relation": "Mother"
-        },
-        {
-          "id": 6,
-          "name": "Traci Wilson",
-          "relation": "Mother"
-        },
-        {
-          "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Sibling"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 10,
-      "name": "Amy Young",
-      "email": "Amy Young@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/female/12.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 1,
-          "name": "Jessica Blair",
-          "relation": "Sibling"
-        },
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
-          "relation": "Sibling"
-        },
-        {
-          "id": 5,
-          "name": "Ryan Mejia",
-          "relation": "Sibling"
-        },
-        {
-          "id": 8,
-          "name": "Eric Pittman",
-          "relation": "Sibling"
-        },
-        {
-          "id": 6,
-          "name": "Traci Wilson",
-          "relation": "Father"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 11,
-      "name": "Steven Francis",
-      "email": "Steven Francis@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/female/18.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 10,
-          "name": "Amy Young",
-          "relation": "Mother"
-        },
-        {
-          "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Father"
-        },
-        {
-          "id": 5,
-          "name": "Ryan Mejia",
-          "relation": "Sibling"
-        },
-        {
-          "id": 8,
-          "name": "Eric Pittman",
-          "relation": "Mother"
-        },
-        {
-          "id": 3,
-          "name": "Michelle Moore",
-          "relation": "Mother"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 12,
-      "name": "Erin Gonzalez",
-      "email": "Erin Gonzalez@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/female/2.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 9,
-          "name": "Christopher Marsh",
-          "relation": "Father"
-        },
-        {
-          "id": 11,
-          "name": "Steven Francis",
-          "relation": "Father"
-        },
-        {
-          "id": 8,
-          "name": "Eric Pittman",
-          "relation": "Mother"
-        },
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
-          "relation": "Mother"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 13,
-      "name": "John Holt",
-      "email": "John Holt@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/female/11.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 5,
-          "name": "Ryan Mejia",
-          "relation": "Mother"
-        },
-        {
-          "id": 6,
-          "name": "Traci Wilson",
-          "relation": "Mother"
-        },
-        {
-          "id": 9,
-          "name": "Christopher Marsh",
-          "relation": "Mother"
-        },
-        {
-          "id": 12,
-          "name": "Erin Gonzalez",
-          "relation": "Father"
-        },
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
-          "relation": "Mother"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 14,
-      "name": "Dana Klein",
-      "email": "Dana Klein@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/12.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 8,
-          "name": "Eric Pittman",
-          "relation": "Mother"
-        },
-        {
-          "id": 9,
-          "name": "Christopher Marsh",
-          "relation": "Mother"
-        },
-        {
-          "id": 13,
-          "name": "John Holt",
-          "relation": "Sibling"
-        },
-        {
-          "id": 5,
-          "name": "Ryan Mejia",
-          "relation": "Mother"
-        },
-        {
-          "id": 7,
-          "name": "Donald Hahn",
-          "relation": "Sibling"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 15,
-      "name": "Jonathan Stevenson",
-      "email": "Jonathan Stevenson@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/female/10.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Father"
-        },
-        {
-          "id": 1,
-          "name": "Jessica Blair",
-          "relation": "Mother"
-        },
-        {
-          "id": 11,
-          "name": "Steven Francis",
-          "relation": "Mother"
-        },
-        {
-          "id": 9,
-          "name": "Christopher Marsh",
-          "relation": "Mother"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 16,
-      "name": "Brandon Hartman",
-      "email": "Brandon Hartman@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/13.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 1,
-          "name": "Jessica Blair",
-          "relation": "Mother"
-        },
-        {
-          "id": 3,
-          "name": "Michelle Moore",
-          "relation": "Mother"
-        },
-        {
-          "id": 13,
-          "name": "John Holt",
-          "relation": "Sibling"
-        },
-        {
-          "id": 9,
-          "name": "Christopher Marsh",
-          "relation": "Sibling"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 17,
-      "name": "Brett Ramirez",
-      "email": "Brett Ramirez@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/3.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 7,
-          "name": "Donald Hahn",
-          "relation": "Mother"
-        },
-        {
-          "id": 15,
-          "name": "Jonathan Stevenson",
-          "relation": "Mother"
-        },
-        {
-          "id": 5,
-          "name": "Ryan Mejia",
-          "relation": "Mother"
-        },
-        {
-          "id": 13,
-          "name": "John Holt",
-          "relation": "Father"
-        },
-        {
-          "id": 3,
-          "name": "Michelle Moore",
-          "relation": "Sibling"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 18,
-      "name": "Alicia Perez",
-      "email": "Alicia Perez@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/male/15.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 3,
-          "name": "Michelle Moore",
-          "relation": "Sibling"
-        },
-        {
-          "id": 1,
-          "name": "Jessica Blair",
-          "relation": "Father"
-        },
-        {
-          "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Mother"
-        },
-        {
-          "id": 11,
-          "name": "Steven Francis",
-          "relation": "Mother"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 19,
-      "name": "Matthew Miller",
-      "email": "Matthew Miller@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/female/15.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
-          "relation": "Father"
-        },
-        {
-          "id": 9,
-          "name": "Christopher Marsh",
-          "relation": "Sibling"
-        },
-        {
-          "id": 18,
-          "name": "Alicia Perez",
-          "relation": "Mother"
-        },
-        {
-          "id": 2,
-          "name": "Charles Johnson",
-          "relation": "Mother"
-        },
-        {
-          "id": 14,
-          "name": "Dana Klein",
-          "relation": "Sibling"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 20,
-      "name": "Tracie Lindsey",
-      "email": "Tracie Lindsey@example.com",
-      "birthdate": "1990-01-01",
-      "profile_image_url": "graph/imgs/female/17.png",
-      "liked_photos": [],
-      "family": [
-        {
-          "id": 6,
-          "name": "Traci Wilson",
-          "relation": "Father"
-        },
-        {
-          "id": 10,
-          "name": "Amy Young",
-          "relation": "Sibling"
-        },
-        {
-          "id": 4,
-          "name": "Nicole Daniels",
-          "relation": "Mother"
-        },
-        {
-          "id": 16,
-          "name": "Brandon Hartman",
-          "relation": "Mother"
-        },
-        {
-          "id": 11,
-          "name": "Steven Francis",
-          "relation": "Mother"
         }
       ],
       "groups": [],
@@ -637,79 +133,22 @@
   ],
   "relationships": {
     "1": [
-      19,
-      12
-    ],
-    "2": [
-      13
-    ],
-    "3": [
-      5,
-      10
-    ],
-    "4": [
-      1,
-      6
-    ],
-    "5": [
-      11,
-      7
-    ],
-    "6": [
-      1,
       3
     ],
-    "7": [
-      13
+    "2": [
+      5
     ],
-    "8": [
-      1
-    ],
-    "9": [],
-    "10": [
-      9,
-      14
-    ],
-    "11": [
-      1,
-      6,
-      10
-    ],
-    "12": [
-      10,
-      20
-    ],
-    "13": [
-      9
-    ],
-    "14": [
-      7
-    ],
-    "15": [
-      8,
-      20
-    ],
-    "16": [
-      18,
+    "3": [
       4
     ],
-    "17": [
-      11,
-      5,
-      10
+    "4": [
+      2,
+      5
     ],
-    "18": [
-      3,
-      1
-    ],
-    "19": [
-      18,
-      9
-    ],
-    "20": [
-      7,
-      9,
-      1
+    "5": [
+      4,
+      1,
+      3
     ]
   }
 }

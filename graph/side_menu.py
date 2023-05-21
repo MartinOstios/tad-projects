@@ -110,12 +110,9 @@ class SideMenu:
     
     def updateComboFriends(self, user_selected):
         # Obtiene la lista de amigos del usuario seleccionado
-        friends = self.relationships[str(user_selected + 1)] # self.user_names.index(user_selected)
-        # Filtra en la lista de usuarios los que son amigos del usuario seleccionado
-        data = list(filter(lambda user: user["id"] in friends, [user for user in self.users]))
-        # Recorre la lista data, que tiene objetos usuario y obtiene los nombres de estos
-        names = [user["name"] for user in data]
-        # Actualiza el combo box
+        user = self.users[user_selected]
+        friends = user["friends"]
+        names = [friend["name"] for friend in friends]
         self.combo_friends_lower.updateOptions(names[0:6]) # Limitado a 6 amigos en la lista
     
     def updateGraph(self, user, graph):
@@ -130,19 +127,21 @@ class SideMenu:
             print("Grupos y comunidades que sigue")
     
     def getFriendNetwork(self, user_id):
-        relationships = {}
         user = self.users[user_id]
-        id_friends = self.relationships[str(user_id + 1)]
-        friends = list(filter(lambda x: x["id"] in id_friends, [user for user in self.users]))
-        relationships[user["id"]] = id_friends
-        self.drawer.set_data([user] + friends, relationships)
+        friends = user["friends"]
+        self.drawer.set_data([user] + friends, "friends")
     
     def getFamilyNetwork(self, user_id):
+        user = self.users[user_id]
+        family = user["family"]
+        self.drawer.set_data([user] + family, "family")
+
+
+        '''
         relationships = {}
         user = self.users[user_id]
         id_family = [family['id'] for family in user['family']]
         family = list(filter(lambda x: x["id"] in id_family, [user for user in self.users]))
         relationships[user["id"]] = id_family
         self.drawer.set_data([user] + family, relationships)
-        
-    
+        '''

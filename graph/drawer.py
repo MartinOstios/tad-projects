@@ -2,14 +2,14 @@ import pygame
 from components import Components
 import random
 class Drawer:
-    def __init__(self, screen, x, y, width, height, users, relationships):
+    def __init__(self, screen, x, y, width, height, users):
         self.screen = screen
         self.x = x
         self.y = y
         self.width = width
         self.height = height
         self.users = users
-        self.relationships = relationships
+        self.graph_type = "friends"
         self.node_positions = {}
         self.components = Components(self.screen)
         self.set_positions()
@@ -20,14 +20,14 @@ class Drawer:
         
 
     def draw_connections(self):
-        for user_id, friends in self.relationships.items():
-            start_pos = self.node_positions.get(int(user_id))  # Verificar si la clave existe en node_positions
-            if start_pos is not None:
-                for friend_id in friends:
-                    end_pos = self.node_positions.get(friend_id)  # Verificar si la clave existe en node_positions
+        for user in self.users:
+            start_pos = self.node_positions.get(user["id"])  # Verificar si la clave existe en node_positions
+            if start_pos is not None and self.graph_type in user:
+                for connection in user[self.graph_type]:
+                    end_pos = self.node_positions.get(connection["id"])  # Verificar si la clave existe en node_positions
                     if end_pos is not None:
-                        pygame.draw.line(self.screen, (0, 0, 0), start_pos, end_pos, 4)
-    
+                        pygame.draw.line(self.screen, (0, 0, 0), start_pos, end_pos, 2)
+
     def draw_nodes(self):
         for user in self.users:
             pos = self.node_positions.get(user["id"])  # Verificar si la clave existe en node_positions
@@ -55,9 +55,10 @@ class Drawer:
             self.node_positions[user["id"]] = (x, y)
     
 
-    def set_data(self, users, relationships):
+    def set_data(self, users, graph_type):
         self.users = users
-        self.relationships = relationships
+        #graph_type = friends, family
+        self.graph_type = graph_type
         self.set_positions()
     
         

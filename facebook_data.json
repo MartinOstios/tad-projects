@@ -2,1093 +2,689 @@
   "users": [
     {
       "id": 1,
-      "name": "Aurora Guzm\u00e1n G\u00f3mez",
-      "email": "aurora_guzm\u00e1n@yahoo.com",
-      "birthdate": "2002-11-05",
-      "profile_image_url": "graph/imgs/female/17.png",
+      "name": "Julio Mendoza Rodr\u00edguez",
+      "email": "julio_mendoza@hotmail.com",
+      "birthdate": "1970-10-26",
+      "profile_image_url": "graph/imgs/male/13.png",
       "liked_photos": [],
       "friends": [
         {
           "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png"
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png"
+        },
+        {
+          "id": 3,
+          "name": "Alexander Vallejo Garc\u00eda",
+          "profile_image_url": "graph/imgs/female/11.png"
         },
         {
           "id": 5,
-          "name": "Jaider Mu\u00f1oz Ruiz",
-          "profile_image_url": "graph/imgs/male/4.png"
+          "name": "H\u00e9ctor Eduardo Acosta",
+          "profile_image_url": "graph/imgs/female/2.png"
         },
         {
-          "id": 10,
-          "name": "Norberto Alberto Castillo Becerra",
-          "profile_image_url": "graph/imgs/female/7.png"
-        },
-        {
-          "id": 13,
-          "name": "Isabel Lorena Hern\u00e1ndez",
-          "profile_image_url": "graph/imgs/female/17.png"
+          "id": 6,
+          "name": "Antonio Sanabria",
+          "profile_image_url": "graph/imgs/male/17.png"
         }
       ],
       "family": [
         {
           "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png",
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png",
           "relation": "Familiar"
         },
         {
           "id": 3,
-          "name": "Stella Roa Arias",
-          "profile_image_url": "graph/imgs/female/13.png",
+          "name": "Alexander Vallejo Garc\u00eda",
+          "profile_image_url": "graph/imgs/female/11.png",
           "relation": "Familiar"
         },
         {
           "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png",
+          "name": "Marleny Ana Vargas Torres",
+          "profile_image_url": "graph/imgs/male/12.png",
           "relation": "Familiar"
         },
         {
           "id": 5,
-          "name": "Jaider Mu\u00f1oz Ruiz",
-          "profile_image_url": "graph/imgs/male/4.png",
+          "name": "H\u00e9ctor Eduardo Acosta",
+          "profile_image_url": "graph/imgs/female/2.png",
           "relation": "Familiar"
         },
         {
           "id": 8,
-          "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 17,
-          "name": "Enrique Edgar S\u00e1nchez",
-          "profile_image_url": "graph/imgs/male/3.png",
+          "name": "Dary In\u00e9s Vergara",
+          "profile_image_url": "graph/imgs/male/2.png",
           "relation": "Familiar"
         }
       ],
       "groups": [],
-      "communities": []
+      "communities": [
+        {
+          "id": 102,
+          "name": "Padres",
+          "profile_image_url": "graph/imgs/communities/padres.png"
+        },
+        {
+          "id": 101,
+          "name": "Cocineros",
+          "profile_image_url": "graph/imgs/communities/cocineros.png"
+        }
+      ]
     },
     {
       "id": 2,
-      "name": "Ana Torres Acevedo",
-      "email": "ana_torres@hotmail.com",
-      "birthdate": "1988-12-03",
-      "profile_image_url": "graph/imgs/male/15.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png"
-        },
-        {
-          "id": 6,
-          "name": "Antonio Iv\u00e1n Garc\u00eda Montoya",
-          "profile_image_url": "graph/imgs/male/11.png"
-        },
-        {
-          "id": 9,
-          "name": "Miguel Sergio Ruiz P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/7.png"
-        },
-        {
-          "id": 15,
-          "name": "Juan Quiroga Mu\u00f1oz",
-          "profile_image_url": "graph/imgs/male/7.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 3,
-          "name": "Stella Roa Arias",
-          "profile_image_url": "graph/imgs/female/13.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 6,
-          "name": "Antonio Iv\u00e1n Garc\u00eda Montoya",
-          "profile_image_url": "graph/imgs/male/11.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 7,
-          "name": "Susana Marina Guerra P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/3.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 10,
-          "name": "Norberto Alberto Castillo Becerra",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 16,
-          "name": "Diego Ricardo Acevedo",
-          "profile_image_url": "graph/imgs/male/4.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 19,
-          "name": "Felix Wilson Rojas Torres",
-          "profile_image_url": "graph/imgs/male/1.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 20,
-          "name": "Alfonso Castellanos",
-          "profile_image_url": "graph/imgs/male/14.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 3,
-      "name": "Stella Roa Arias",
-      "email": "stella_roa@hotmail.com",
-      "birthdate": "1992-02-01",
-      "profile_image_url": "graph/imgs/female/13.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 8,
-          "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-          "profile_image_url": "graph/imgs/female/7.png"
-        },
-        {
-          "id": 9,
-          "name": "Miguel Sergio Ruiz P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/7.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Father"
-        },
-        {
-          "id": 6,
-          "name": "Antonio Iv\u00e1n Garc\u00eda Montoya",
-          "profile_image_url": "graph/imgs/male/11.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 7,
-          "name": "Susana Marina Guerra P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/3.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 9,
-          "name": "Miguel Sergio Ruiz P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 4,
-      "name": "Diana G\u00f3mez L\u00f3pez",
-      "email": "diana_g\u00f3mez@gmail.com",
-      "birthdate": "1997-06-13",
-      "profile_image_url": "graph/imgs/male/8.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 14,
-          "name": "David Iv\u00e1n Mu\u00f1oz Gonz\u00e1lez",
-          "profile_image_url": "graph/imgs/male/16.png"
-        },
-        {
-          "id": 16,
-          "name": "Diego Ricardo Acevedo",
-          "profile_image_url": "graph/imgs/male/4.png"
-        },
-        {
-          "id": 18,
-          "name": "Anderson Luis Rivera",
-          "profile_image_url": "graph/imgs/male/5.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Mother"
-        },
-        {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png",
-          "relation": "Mother"
-        },
-        {
-          "id": 5,
-          "name": "Jaider Mu\u00f1oz Ruiz",
-          "profile_image_url": "graph/imgs/male/4.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 7,
-          "name": "Susana Marina Guerra P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/3.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 8,
-          "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 18,
-          "name": "Anderson Luis Rivera",
-          "profile_image_url": "graph/imgs/male/5.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 5,
-      "name": "Jaider Mu\u00f1oz Ruiz",
-      "email": "jaider_mu\u00f1oz@yahoo.com",
-      "birthdate": "1973-02-11",
-      "profile_image_url": "graph/imgs/male/4.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png"
-        },
-        {
-          "id": 7,
-          "name": "Susana Marina Guerra P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/3.png"
-        },
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png"
-        },
-        {
-          "id": 12,
-          "name": "Manuel Rub\u00e9n Vargas",
-          "profile_image_url": "graph/imgs/male/7.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png",
-          "relation": "Mother"
-        },
-        {
-          "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Father"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 6,
-      "name": "Antonio Iv\u00e1n Garc\u00eda Montoya",
-      "email": "antonio_iv\u00e1n@hotmail.com",
-      "birthdate": "1994-06-04",
-      "profile_image_url": "graph/imgs/male/11.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png"
-        },
-        {
-          "id": 8,
-          "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-          "profile_image_url": "graph/imgs/female/7.png"
-        },
-        {
-          "id": 15,
-          "name": "Juan Quiroga Mu\u00f1oz",
-          "profile_image_url": "graph/imgs/male/7.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 3,
-          "name": "Stella Roa Arias",
-          "profile_image_url": "graph/imgs/female/13.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 8,
-          "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 10,
-          "name": "Norberto Alberto Castillo Becerra",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 19,
-          "name": "Felix Wilson Rojas Torres",
-          "profile_image_url": "graph/imgs/male/1.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 7,
-      "name": "Susana Marina Guerra P\u00e9rez",
-      "email": "susana_marina@yahoo.com",
-      "birthdate": "1999-06-04",
-      "profile_image_url": "graph/imgs/female/3.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 5,
-          "name": "Jaider Mu\u00f1oz Ruiz",
-          "profile_image_url": "graph/imgs/male/4.png"
-        },
-        {
-          "id": 14,
-          "name": "David Iv\u00e1n Mu\u00f1oz Gonz\u00e1lez",
-          "profile_image_url": "graph/imgs/male/16.png"
-        },
-        {
-          "id": 15,
-          "name": "Juan Quiroga Mu\u00f1oz",
-          "profile_image_url": "graph/imgs/male/7.png"
-        },
-        {
-          "id": 18,
-          "name": "Anderson Luis Rivera",
-          "profile_image_url": "graph/imgs/male/5.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 3,
-          "name": "Stella Roa Arias",
-          "profile_image_url": "graph/imgs/female/13.png",
-          "relation": "Mother"
-        },
-        {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png",
-          "relation": "Mother"
-        },
-        {
-          "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 20,
-          "name": "Alfonso Castellanos",
-          "profile_image_url": "graph/imgs/male/14.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 8,
-      "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-      "email": "felipe_david@hotmail.com",
-      "birthdate": "2002-08-05",
-      "profile_image_url": "graph/imgs/female/7.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 3,
-          "name": "Stella Roa Arias",
-          "profile_image_url": "graph/imgs/female/13.png"
-        },
-        {
-          "id": 6,
-          "name": "Antonio Iv\u00e1n Garc\u00eda Montoya",
-          "profile_image_url": "graph/imgs/male/11.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 6,
-          "name": "Antonio Iv\u00e1n Garc\u00eda Montoya",
-          "profile_image_url": "graph/imgs/male/11.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png",
-          "relation": "Father"
-        },
-        {
-          "id": 9,
-          "name": "Miguel Sergio Ruiz P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 13,
-          "name": "Isabel Lorena Hern\u00e1ndez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 14,
-          "name": "David Iv\u00e1n Mu\u00f1oz Gonz\u00e1lez",
-          "profile_image_url": "graph/imgs/male/16.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 18,
-          "name": "Anderson Luis Rivera",
-          "profile_image_url": "graph/imgs/male/5.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 9,
-      "name": "Miguel Sergio Ruiz P\u00e9rez",
-      "email": "miguel_sergio@gmail.com",
-      "birthdate": "1991-10-04",
-      "profile_image_url": "graph/imgs/female/7.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 3,
-          "name": "Stella Roa Arias",
-          "profile_image_url": "graph/imgs/female/13.png"
-        },
-        {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 3,
-          "name": "Stella Roa Arias",
-          "profile_image_url": "graph/imgs/female/13.png",
-          "relation": "Father"
-        },
-        {
-          "id": 8,
-          "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Father"
-        },
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 12,
-          "name": "Manuel Rub\u00e9n Vargas",
-          "profile_image_url": "graph/imgs/male/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 16,
-          "name": "Diego Ricardo Acevedo",
-          "profile_image_url": "graph/imgs/male/4.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 10,
-      "name": "Norberto Alberto Castillo Becerra",
-      "email": "norberto_alberto@autonoma.edu.co",
-      "birthdate": "1980-09-01",
-      "profile_image_url": "graph/imgs/female/7.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 6,
-          "name": "Antonio Iv\u00e1n Garc\u00eda Montoya",
-          "profile_image_url": "graph/imgs/male/11.png",
-          "relation": "Mother"
-        },
-        {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 17,
-          "name": "Enrique Edgar S\u00e1nchez",
-          "profile_image_url": "graph/imgs/male/3.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 11,
-      "name": "Gladys \u00c1ngela Mosquera",
-      "email": "gladys_\u00e1ngela@yahoo.com",
-      "birthdate": "2009-08-13",
-      "profile_image_url": "graph/imgs/male/14.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 5,
-          "name": "Jaider Mu\u00f1oz Ruiz",
-          "profile_image_url": "graph/imgs/male/4.png"
-        },
-        {
-          "id": 13,
-          "name": "Isabel Lorena Hern\u00e1ndez",
-          "profile_image_url": "graph/imgs/female/17.png"
-        },
-        {
-          "id": 18,
-          "name": "Anderson Luis Rivera",
-          "profile_image_url": "graph/imgs/male/5.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 9,
-          "name": "Miguel Sergio Ruiz P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Father"
-        },
-        {
-          "id": 7,
-          "name": "Susana Marina Guerra P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/3.png",
-          "relation": "Father"
-        },
-        {
-          "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 12,
-          "name": "Manuel Rub\u00e9n Vargas",
-          "profile_image_url": "graph/imgs/male/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 13,
-          "name": "Isabel Lorena Hern\u00e1ndez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 14,
-          "name": "David Iv\u00e1n Mu\u00f1oz Gonz\u00e1lez",
-          "profile_image_url": "graph/imgs/male/16.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 15,
-          "name": "Juan Quiroga Mu\u00f1oz",
-          "profile_image_url": "graph/imgs/male/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 19,
-          "name": "Felix Wilson Rojas Torres",
-          "profile_image_url": "graph/imgs/male/1.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 12,
-      "name": "Manuel Rub\u00e9n Vargas",
-      "email": "manuel_rub\u00e9n@hotmail.com",
-      "birthdate": "1997-03-04",
-      "profile_image_url": "graph/imgs/male/7.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 5,
-          "name": "Jaider Mu\u00f1oz Ruiz",
-          "profile_image_url": "graph/imgs/male/4.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png",
-          "relation": "Father"
-        },
-        {
-          "id": 9,
-          "name": "Miguel Sergio Ruiz P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 13,
-          "name": "Isabel Lorena Hern\u00e1ndez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 15,
-          "name": "Juan Quiroga Mu\u00f1oz",
-          "profile_image_url": "graph/imgs/male/7.png",
-          "relation": "Familiar"
-        },
-        {
-          "id": 18,
-          "name": "Anderson Luis Rivera",
-          "profile_image_url": "graph/imgs/male/5.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 13,
-      "name": "Isabel Lorena Hern\u00e1ndez",
-      "email": "isabel_lorena@hotmail.com",
-      "birthdate": "1976-06-22",
-      "profile_image_url": "graph/imgs/female/17.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png"
-        },
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png"
-        },
-        {
-          "id": 14,
-          "name": "David Iv\u00e1n Mu\u00f1oz Gonz\u00e1lez",
-          "profile_image_url": "graph/imgs/male/16.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 12,
-          "name": "Manuel Rub\u00e9n Vargas",
-          "profile_image_url": "graph/imgs/male/7.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 8,
-          "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Mother"
-        },
-        {
-          "id": 14,
-          "name": "David Iv\u00e1n Mu\u00f1oz Gonz\u00e1lez",
-          "profile_image_url": "graph/imgs/male/16.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 14,
-      "name": "David Iv\u00e1n Mu\u00f1oz Gonz\u00e1lez",
-      "email": "david_iv\u00e1n@hotmail.com",
-      "birthdate": "1977-08-24",
+      "name": "An\u00edbal Antonio Hern\u00e1ndez",
+      "email": "an\u00edbal_antonio@yahoo.com",
+      "birthdate": "1999-08-17",
       "profile_image_url": "graph/imgs/male/16.png",
       "liked_photos": [],
       "friends": [
         {
-          "id": 7,
-          "name": "Susana Marina Guerra P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/3.png"
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png"
+        },
+        {
+          "id": 3,
+          "name": "Alexander Vallejo Garc\u00eda",
+          "profile_image_url": "graph/imgs/female/11.png"
         },
         {
           "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png"
+          "name": "Marleny Ana Vargas Torres",
+          "profile_image_url": "graph/imgs/male/12.png"
         },
-        {
-          "id": 13,
-          "name": "Isabel Lorena Hern\u00e1ndez",
-          "profile_image_url": "graph/imgs/female/17.png"
-        },
-        {
-          "id": 20,
-          "name": "Alfonso Castellanos",
-          "profile_image_url": "graph/imgs/male/14.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 13,
-          "name": "Isabel Lorena Hern\u00e1ndez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Father"
-        },
-        {
-          "id": 8,
-          "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Father"
-        },
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png",
-          "relation": "Mother"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 15,
-      "name": "Juan Quiroga Mu\u00f1oz",
-      "email": "juan_quiroga@hotmail.com",
-      "birthdate": "1980-06-09",
-      "profile_image_url": "graph/imgs/male/7.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png"
-        },
-        {
-          "id": 6,
-          "name": "Antonio Iv\u00e1n Garc\u00eda Montoya",
-          "profile_image_url": "graph/imgs/male/11.png"
-        },
-        {
-          "id": 7,
-          "name": "Susana Marina Guerra P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/3.png"
-        },
-        {
-          "id": 17,
-          "name": "Enrique Edgar S\u00e1nchez",
-          "profile_image_url": "graph/imgs/male/3.png"
-        }
-      ],
-      "family": [
-        {
-          "id": 12,
-          "name": "Manuel Rub\u00e9n Vargas",
-          "profile_image_url": "graph/imgs/male/7.png",
-          "relation": "Father"
-        },
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png",
-          "relation": "Sibling"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 16,
-      "name": "Diego Ricardo Acevedo",
-      "email": "diego_ricardo@gmail.com",
-      "birthdate": "2002-03-19",
-      "profile_image_url": "graph/imgs/male/4.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png"
-        },
-        {
-          "id": 17,
-          "name": "Enrique Edgar S\u00e1nchez",
-          "profile_image_url": "graph/imgs/male/3.png"
-        }
-      ],
-      "family": [
         {
           "id": 9,
-          "name": "Miguel Sergio Ruiz P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Sibling"
-        },
-        {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png",
-          "relation": "Father"
-        },
-        {
-          "id": 17,
-          "name": "Enrique Edgar S\u00e1nchez",
-          "profile_image_url": "graph/imgs/male/3.png",
-          "relation": "Familiar"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 17,
-      "name": "Enrique Edgar S\u00e1nchez",
-      "email": "enrique_edgar@autonoma.edu.co",
-      "birthdate": "1991-12-10",
-      "profile_image_url": "graph/imgs/male/3.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 16,
-          "name": "Diego Ricardo Acevedo",
-          "profile_image_url": "graph/imgs/male/4.png"
-        },
-        {
-          "id": 15,
-          "name": "Juan Quiroga Mu\u00f1oz",
-          "profile_image_url": "graph/imgs/male/7.png"
-        },
-        {
-          "id": 19,
-          "name": "Felix Wilson Rojas Torres",
-          "profile_image_url": "graph/imgs/male/1.png"
+          "name": "Francisco Le\u00f3n Garc\u00eda Castro",
+          "profile_image_url": "graph/imgs/male/2.png"
         }
       ],
       "family": [
         {
           "id": 1,
-          "name": "Aurora Guzm\u00e1n G\u00f3mez",
-          "profile_image_url": "graph/imgs/female/17.png",
-          "relation": "Father"
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png",
+          "relation": "Mother"
+        },
+        {
+          "id": 3,
+          "name": "Alexander Vallejo Garc\u00eda",
+          "profile_image_url": "graph/imgs/female/11.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 4,
+          "name": "Marleny Ana Vargas Torres",
+          "profile_image_url": "graph/imgs/male/12.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 6,
+          "name": "Antonio Sanabria",
+          "profile_image_url": "graph/imgs/male/17.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 7,
+          "name": "Martha Castro",
+          "profile_image_url": "graph/imgs/female/1.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 9,
+          "name": "Francisco Le\u00f3n Garc\u00eda Castro",
+          "profile_image_url": "graph/imgs/male/2.png",
+          "relation": "Familiar"
+        }
+      ],
+      "groups": [],
+      "communities": [
+        {
+          "id": 100,
+          "name": "Programadores",
+          "profile_image_url": "graph/imgs/communities/programadores.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Alexander Vallejo Garc\u00eda",
+      "email": "alexander_vallejo@hotmail.com",
+      "birthdate": "2008-04-28",
+      "profile_image_url": "graph/imgs/female/11.png",
+      "liked_photos": [],
+      "friends": [
+        {
+          "id": 2,
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png"
+        },
+        {
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png"
         },
         {
           "id": 10,
-          "name": "Norberto Alberto Castillo Becerra",
-          "profile_image_url": "graph/imgs/female/7.png",
-          "relation": "Mother"
-        },
-        {
-          "id": 16,
-          "name": "Diego Ricardo Acevedo",
-          "profile_image_url": "graph/imgs/male/4.png",
-          "relation": "Father"
-        }
-      ],
-      "groups": [],
-      "communities": []
-    },
-    {
-      "id": 18,
-      "name": "Anderson Luis Rivera",
-      "email": "anderson_luis@yahoo.com",
-      "birthdate": "1974-08-11",
-      "profile_image_url": "graph/imgs/male/5.png",
-      "liked_photos": [],
-      "friends": [
-        {
-          "id": 7,
-          "name": "Susana Marina Guerra P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/3.png"
-        },
-        {
-          "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png"
-        },
-        {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png"
+          "name": "Ana D\u00edaz Meza",
+          "profile_image_url": "graph/imgs/female/18.png"
         }
       ],
       "family": [
         {
-          "id": 8,
-          "name": "Felipe David Jim\u00e9nez Rodr\u00edguez",
-          "profile_image_url": "graph/imgs/female/7.png",
+          "id": 2,
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png",
           "relation": "Sibling"
         },
         {
-          "id": 4,
-          "name": "Diana G\u00f3mez L\u00f3pez",
-          "profile_image_url": "graph/imgs/male/8.png",
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png",
           "relation": "Father"
         },
         {
-          "id": 12,
-          "name": "Manuel Rub\u00e9n Vargas",
-          "profile_image_url": "graph/imgs/male/7.png",
-          "relation": "Mother"
+          "id": 5,
+          "name": "H\u00e9ctor Eduardo Acosta",
+          "profile_image_url": "graph/imgs/female/2.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 6,
+          "name": "Antonio Sanabria",
+          "profile_image_url": "graph/imgs/male/17.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 9,
+          "name": "Francisco Le\u00f3n Garc\u00eda Castro",
+          "profile_image_url": "graph/imgs/male/2.png",
+          "relation": "Familiar"
         }
       ],
       "groups": [],
-      "communities": []
+      "communities": [
+        {
+          "id": 100,
+          "name": "Programadores",
+          "profile_image_url": "graph/imgs/communities/programadores.png"
+        }
+      ]
     },
     {
-      "id": 19,
-      "name": "Felix Wilson Rojas Torres",
-      "email": "felix_wilson@yahoo.com",
-      "birthdate": "1989-12-10",
-      "profile_image_url": "graph/imgs/male/1.png",
+      "id": 4,
+      "name": "Marleny Ana Vargas Torres",
+      "email": "marleny_ana@yahoo.com",
+      "birthdate": "1992-04-09",
+      "profile_image_url": "graph/imgs/male/12.png",
       "liked_photos": [],
       "friends": [
         {
-          "id": 17,
-          "name": "Enrique Edgar S\u00e1nchez",
-          "profile_image_url": "graph/imgs/male/3.png"
+          "id": 2,
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png"
+        },
+        {
+          "id": 9,
+          "name": "Francisco Le\u00f3n Garc\u00eda Castro",
+          "profile_image_url": "graph/imgs/male/2.png"
         }
       ],
       "family": [
         {
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png",
+          "relation": "Father"
+        },
+        {
+          "id": 2,
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png",
+          "relation": "Sibling"
+        },
+        {
+          "id": 5,
+          "name": "H\u00e9ctor Eduardo Acosta",
+          "profile_image_url": "graph/imgs/female/2.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 9,
+          "name": "Francisco Le\u00f3n Garc\u00eda Castro",
+          "profile_image_url": "graph/imgs/male/2.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 10,
+          "name": "Ana D\u00edaz Meza",
+          "profile_image_url": "graph/imgs/female/18.png",
+          "relation": "Familiar"
+        }
+      ],
+      "groups": [],
+      "communities": [
+        {
+          "id": 100,
+          "name": "Programadores",
+          "profile_image_url": "graph/imgs/communities/programadores.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "H\u00e9ctor Eduardo Acosta",
+      "email": "h\u00e9ctor_eduardo@gmail.com",
+      "birthdate": "1995-08-17",
+      "profile_image_url": "graph/imgs/female/2.png",
+      "liked_photos": [],
+      "friends": [
+        {
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png"
+        }
+      ],
+      "family": [
+        {
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png",
+          "relation": "Father"
+        },
+        {
+          "id": 4,
+          "name": "Marleny Ana Vargas Torres",
+          "profile_image_url": "graph/imgs/male/12.png",
+          "relation": "Sibling"
+        },
+        {
+          "id": 3,
+          "name": "Alexander Vallejo Garc\u00eda",
+          "profile_image_url": "graph/imgs/female/11.png",
+          "relation": "Mother"
+        },
+        {
           "id": 6,
-          "name": "Antonio Iv\u00e1n Garc\u00eda Montoya",
-          "profile_image_url": "graph/imgs/male/11.png",
+          "name": "Antonio Sanabria",
+          "profile_image_url": "graph/imgs/male/17.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 7,
+          "name": "Martha Castro",
+          "profile_image_url": "graph/imgs/female/1.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 8,
+          "name": "Dary In\u00e9s Vergara",
+          "profile_image_url": "graph/imgs/male/2.png",
+          "relation": "Familiar"
+        },
+        {
+          "id": 10,
+          "name": "Ana D\u00edaz Meza",
+          "profile_image_url": "graph/imgs/female/18.png",
+          "relation": "Familiar"
+        }
+      ],
+      "groups": [],
+      "communities": [
+        {
+          "id": 102,
+          "name": "Padres",
+          "profile_image_url": "graph/imgs/communities/padres.png"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Antonio Sanabria",
+      "email": "antonio_sanabria@autonoma.edu.co",
+      "birthdate": "1983-03-25",
+      "profile_image_url": "graph/imgs/male/17.png",
+      "liked_photos": [],
+      "friends": [
+        {
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png"
+        },
+        {
+          "id": 8,
+          "name": "Dary In\u00e9s Vergara",
+          "profile_image_url": "graph/imgs/male/2.png"
+        },
+        {
+          "id": 9,
+          "name": "Francisco Le\u00f3n Garc\u00eda Castro",
+          "profile_image_url": "graph/imgs/male/2.png"
+        }
+      ],
+      "family": [
+        {
+          "id": 5,
+          "name": "H\u00e9ctor Eduardo Acosta",
+          "profile_image_url": "graph/imgs/female/2.png",
+          "relation": "Sibling"
+        },
+        {
+          "id": 3,
+          "name": "Alexander Vallejo Garc\u00eda",
+          "profile_image_url": "graph/imgs/female/11.png",
           "relation": "Sibling"
         },
         {
           "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png",
-          "relation": "Sibling"
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png",
+          "relation": "Mother"
         },
         {
-          "id": 11,
-          "name": "Gladys \u00c1ngela Mosquera",
-          "profile_image_url": "graph/imgs/male/14.png",
+          "id": 7,
+          "name": "Martha Castro",
+          "profile_image_url": "graph/imgs/female/1.png",
+          "relation": "Familiar"
+        }
+      ],
+      "groups": [],
+      "communities": [
+        {
+          "id": 100,
+          "name": "Programadores",
+          "profile_image_url": "graph/imgs/communities/programadores.png"
+        },
+        {
+          "id": 102,
+          "name": "Padres",
+          "profile_image_url": "graph/imgs/communities/padres.png"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Martha Castro",
+      "email": "martha_castro@autonoma.edu.co",
+      "birthdate": "1993-11-11",
+      "profile_image_url": "graph/imgs/female/1.png",
+      "liked_photos": [],
+      "friends": [],
+      "family": [
+        {
+          "id": 5,
+          "name": "H\u00e9ctor Eduardo Acosta",
+          "profile_image_url": "graph/imgs/female/2.png",
+          "relation": "Mother"
+        },
+        {
+          "id": 6,
+          "name": "Antonio Sanabria",
+          "profile_image_url": "graph/imgs/male/17.png",
+          "relation": "Father"
+        },
+        {
+          "id": 2,
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png",
           "relation": "Mother"
         }
       ],
       "groups": [],
-      "communities": []
+      "communities": [
+        {
+          "id": 101,
+          "name": "Cocineros",
+          "profile_image_url": "graph/imgs/communities/cocineros.png"
+        },
+        {
+          "id": 102,
+          "name": "Padres",
+          "profile_image_url": "graph/imgs/communities/padres.png"
+        }
+      ]
     },
     {
-      "id": 20,
-      "name": "Alfonso Castellanos",
-      "email": "alfonso_castellanos@yahoo.com",
-      "birthdate": "1992-07-11",
-      "profile_image_url": "graph/imgs/male/14.png",
+      "id": 8,
+      "name": "Dary In\u00e9s Vergara",
+      "email": "dary_in\u00e9s@autonoma.edu.co",
+      "birthdate": "2004-06-13",
+      "profile_image_url": "graph/imgs/male/2.png",
       "liked_photos": [],
       "friends": [
         {
-          "id": 14,
-          "name": "David Iv\u00e1n Mu\u00f1oz Gonz\u00e1lez",
+          "id": 6,
+          "name": "Antonio Sanabria",
+          "profile_image_url": "graph/imgs/male/17.png"
+        },
+        {
+          "id": 10,
+          "name": "Ana D\u00edaz Meza",
+          "profile_image_url": "graph/imgs/female/18.png"
+        }
+      ],
+      "family": [
+        {
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png",
+          "relation": "Mother"
+        },
+        {
+          "id": 5,
+          "name": "H\u00e9ctor Eduardo Acosta",
+          "profile_image_url": "graph/imgs/female/2.png",
+          "relation": "Father"
+        },
+        {
+          "id": 10,
+          "name": "Ana D\u00edaz Meza",
+          "profile_image_url": "graph/imgs/female/18.png",
+          "relation": "Familiar"
+        }
+      ],
+      "groups": [],
+      "communities": [
+        {
+          "id": 102,
+          "name": "Padres",
+          "profile_image_url": "graph/imgs/communities/padres.png"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Francisco Le\u00f3n Garc\u00eda Castro",
+      "email": "francisco_le\u00f3n@autonoma.edu.co",
+      "birthdate": "1986-05-26",
+      "profile_image_url": "graph/imgs/male/2.png",
+      "liked_photos": [],
+      "friends": [
+        {
+          "id": 4,
+          "name": "Marleny Ana Vargas Torres",
+          "profile_image_url": "graph/imgs/male/12.png"
+        },
+        {
+          "id": 6,
+          "name": "Antonio Sanabria",
+          "profile_image_url": "graph/imgs/male/17.png"
+        },
+        {
+          "id": 2,
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
           "profile_image_url": "graph/imgs/male/16.png"
         }
       ],
       "family": [
         {
-          "id": 7,
-          "name": "Susana Marina Guerra P\u00e9rez",
-          "profile_image_url": "graph/imgs/female/3.png",
-          "relation": "Sibling"
+          "id": 2,
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png",
+          "relation": "Father"
         },
         {
-          "id": 2,
-          "name": "Ana Torres Acevedo",
-          "profile_image_url": "graph/imgs/male/15.png",
+          "id": 3,
+          "name": "Alexander Vallejo Garc\u00eda",
+          "profile_image_url": "graph/imgs/female/11.png",
           "relation": "Mother"
+        },
+        {
+          "id": 4,
+          "name": "Marleny Ana Vargas Torres",
+          "profile_image_url": "graph/imgs/male/12.png",
+          "relation": "Sibling"
         }
       ],
       "groups": [],
-      "communities": []
+      "communities": [
+        {
+          "id": 101,
+          "name": "Cocineros",
+          "profile_image_url": "graph/imgs/communities/cocineros.png"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Ana D\u00edaz Meza",
+      "email": "ana_d\u00edaz@gmail.com",
+      "birthdate": "2007-06-01",
+      "profile_image_url": "graph/imgs/female/18.png",
+      "liked_photos": [],
+      "friends": [
+        {
+          "id": 3,
+          "name": "Alexander Vallejo Garc\u00eda",
+          "profile_image_url": "graph/imgs/female/11.png"
+        },
+        {
+          "id": 8,
+          "name": "Dary In\u00e9s Vergara",
+          "profile_image_url": "graph/imgs/male/2.png"
+        }
+      ],
+      "family": [
+        {
+          "id": 8,
+          "name": "Dary In\u00e9s Vergara",
+          "profile_image_url": "graph/imgs/male/2.png",
+          "relation": "Sibling"
+        },
+        {
+          "id": 5,
+          "name": "H\u00e9ctor Eduardo Acosta",
+          "profile_image_url": "graph/imgs/female/2.png",
+          "relation": "Father"
+        },
+        {
+          "id": 4,
+          "name": "Marleny Ana Vargas Torres",
+          "profile_image_url": "graph/imgs/male/12.png",
+          "relation": "Father"
+        }
+      ],
+      "groups": [],
+      "communities": [
+        {
+          "id": 101,
+          "name": "Cocineros",
+          "profile_image_url": "graph/imgs/communities/cocineros.png"
+        }
+      ]
+    }
+  ],
+  "communities": [
+    {
+      "id": 100,
+      "name": "Programadores",
+      "members": [
+        {
+          "id": 2,
+          "name": "An\u00edbal Antonio Hern\u00e1ndez",
+          "profile_image_url": "graph/imgs/male/16.png"
+        },
+        {
+          "id": 3,
+          "name": "Alexander Vallejo Garc\u00eda",
+          "profile_image_url": "graph/imgs/female/11.png"
+        },
+        {
+          "id": 4,
+          "name": "Marleny Ana Vargas Torres",
+          "profile_image_url": "graph/imgs/male/12.png"
+        },
+        {
+          "id": 6,
+          "name": "Antonio Sanabria",
+          "profile_image_url": "graph/imgs/male/17.png"
+        }
+      ],
+      "profile_image_url": "graph/imgs/communities/programadores.png"
+    },
+    {
+      "id": 101,
+      "name": "Cocineros",
+      "members": [
+        {
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png"
+        },
+        {
+          "id": 7,
+          "name": "Martha Castro",
+          "profile_image_url": "graph/imgs/female/1.png"
+        },
+        {
+          "id": 9,
+          "name": "Francisco Le\u00f3n Garc\u00eda Castro",
+          "profile_image_url": "graph/imgs/male/2.png"
+        },
+        {
+          "id": 10,
+          "name": "Ana D\u00edaz Meza",
+          "profile_image_url": "graph/imgs/female/18.png"
+        }
+      ],
+      "profile_image_url": "graph/imgs/communities/cocineros.png"
+    },
+    {
+      "id": 102,
+      "name": "Padres",
+      "members": [
+        {
+          "id": 1,
+          "name": "Julio Mendoza Rodr\u00edguez",
+          "profile_image_url": "graph/imgs/male/13.png"
+        },
+        {
+          "id": 5,
+          "name": "H\u00e9ctor Eduardo Acosta",
+          "profile_image_url": "graph/imgs/female/2.png"
+        },
+        {
+          "id": 6,
+          "name": "Antonio Sanabria",
+          "profile_image_url": "graph/imgs/male/17.png"
+        },
+        {
+          "id": 7,
+          "name": "Martha Castro",
+          "profile_image_url": "graph/imgs/female/1.png"
+        },
+        {
+          "id": 8,
+          "name": "Dary In\u00e9s Vergara",
+          "profile_image_url": "graph/imgs/male/2.png"
+        }
+      ],
+      "profile_image_url": "graph/imgs/communities/padres.png"
     }
   ]
 }

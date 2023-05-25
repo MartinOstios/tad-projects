@@ -46,6 +46,7 @@ class Drawer:
     
     def set_positions(self):
         # Calcular las coordenadas de los nodos
+        self.node_positions.clear()
         x_spacing = self.width // (len(self.users) + 1)
         y_spacing = self.height // (len(self.users) + 1)
         y_positions = [random.randint(y_spacing, self.height - y_spacing) for _ in range(len(self.users))]
@@ -53,11 +54,13 @@ class Drawer:
             x = (i + 1) * x_spacing
             y = y_positions[i]
             self.node_positions[user["id"]] = (x, y)
+        print(self.node_positions)
     
 
     def set_data(self, users, graph_type):
         self.users = users
-        #graph_type = friends, family
+        #print(self.users)
+        #graph_type = friends, family, communities
         self.graph_type = graph_type
         self.set_positions()
     

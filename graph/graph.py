@@ -21,7 +21,7 @@ generator = ImagesApi()
 
 class GraphView:
     def __init__(self):
-        self.USERS_QUANTITY = 20
+        self.USERS_QUANTITY = 10
         self.FRIENDS_QUANTITY = 3
         self.FAMILY_QUANTITY = 3
         self.generate_data()
@@ -29,15 +29,15 @@ class GraphView:
         self.WINDOW_WIDTH = 1400
         self.WINDOW_HEIGHT = 600
         self.BACKGROUND_COLOR = (255, 255, 255)
-        self.users = {}
-        self.relationships = {}
+        self.users = []
+        self.communities = []
         self.screen = pygame.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
         pygame.display.set_caption("Red de Usuarios de Facebook")
         self.clock = pygame.time.Clock()
         self.components = Components(self.screen)
         self.load_json()
         self.drawer = Drawer(self.screen, 0, 0, self.WINDOW_WIDTH - 200, self.WINDOW_HEIGHT, self.users)
-        self.menu = SideMenu(self.screen, self.WINDOW_WIDTH - 200, 0, 200, self.WINDOW_HEIGHT, self.components.GRAY, self.users, self.relationships, self.drawer)
+        self.menu = SideMenu(self.screen, self.WINDOW_WIDTH - 200, 0, 200, self.WINDOW_HEIGHT, self.components.GRAY, self.users, self.drawer)
 
     def run(self):
         while True:
@@ -58,6 +58,7 @@ class GraphView:
         with open("facebook_data.json", "r") as file:
             data = json.load(file)
             self.users = data["users"]
+            self.communities = data["communities"]
             #self.relationships = data["relationships"]
             self.load_profile_images()
 
@@ -76,10 +77,25 @@ class GraphView:
                     image = family["profile_image_url"]
                     image = pygame.image.load(image)
                     family["profile_image"] = image
-
+                
+                for communitie in user["communities"]:
+                    image = communitie["profile_image_url"]
+                    image = pygame.image.load(image)
+                    communitie["profile_image"] = image
             except Exception as e:
                 print(f"Error al cargar la imagen de perfil para el usuario {user['id']}: {e}")
 
+        for communitie in self.communities:
+            try:
+                image = communitie["profile_image_url"]
+                image = pygame.image.load(image)
+                communitie["profile_image"] = image
+            except Exception as e:
+                print(f"Error al cargar la imagen de perfil para la comunidad {communitie['id']}: {e}")
+
+                
+
+        
     def draw(self):
         self.components.drawImage("graph/imgs/logo-facebook.png", 18, 12)
         self.components.drawText("Estos datos son fake y se leen a través de un archivo JSON", self.components.BLACK, None, 94, 35, "Arial", 16, False)
@@ -180,8 +196,44 @@ class GraphView:
             except Exception as e:
                 print(f"Error al generar el usuario {i + 1}: {e}")
 
+        # Communities ----------------------
+        communitie1 = {
+            'id': 100,
+            'name': 'Programadores',
+            'members': [],
+            'profile_image_url': "graph/imgs/communities/programadores.png"
+        }
 
-        
+        communitie2 = {
+            'id': 101,
+            'name': 'Cocineros',
+            'members': [],
+            'profile_image_url': "graph/imgs/communities/cocineros.png"
+        }
+
+        communitie3 = {
+            'id': 102,
+            'name': 'Padres',
+            'members': [],
+            'profile_image_url': "graph/imgs/communities/padres.png"
+        }
+
+        communities = [communitie1, communitie2, communitie3]
+        for user in users:
+            num_communities = random.randint(1, 2)
+            communities_selected = random.sample(communities, num_communities)
+            for communitie in communities_selected:
+                communitie['members'].append({
+                    'id': user['id'],
+                    'name': user['name'],
+                    'profile_image_url': user['profile_image_url']
+                })
+                user['communities'].append({
+                    'id': communitie['id'],
+                    'name': communitie['name'],
+                    'profile_image_url': communitie['profile_image_url']
+                })
+            
         '''
             for user in users:
             # ----------------- Cantidad de amigos -----------------------
@@ -193,9 +245,10 @@ class GraphView:
             for friend in friends:
                 graph.add_edge(user["id"], friend["id"])
         '''
-
+        
         data = {
             "users": users,
+            "communities": communities,
         }
 
         return data, graph

@@ -2,14 +2,13 @@ from components import Components
 import pygame
 from combo_box import ComboBox
 class SideMenu:
-    def __init__(self, screen, x, y, width, height, color, users, relationships, drawer):
+    def __init__(self, screen, x, y, width, height, color, users, drawer):
         self.screen = screen
         self.x = x
         self.y = y
         self.width = width
         self.height = height
         self.users = users
-        self.relationships = relationships
         self.drawer = drawer
         self.user_names = [str(user["name"]) for user in self.users]
         self.color = color
@@ -124,7 +123,8 @@ class SideMenu:
             print("Red de familia")
             self.getFamilyNetwork(user)
         if graph == 2:
-            print("Grupos y comunidades que sigue")
+            print("Comunidades que sigue")
+            self.getCommunitiesNetwork(user)
     
     def getFriendNetwork(self, user_id):
         user = self.users[user_id]
@@ -135,7 +135,12 @@ class SideMenu:
         user = self.users[user_id]
         family = user["family"]
         self.drawer.set_data([user] + family, "family")
-
+    
+    def getCommunitiesNetwork(self, user_id):
+        user = self.users[user_id]
+        communities = user["communities"]
+        print(communities)
+        self.drawer.set_data([user] + communities, "communities")
 
         '''
         relationships = {}

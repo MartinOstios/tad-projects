@@ -37,7 +37,7 @@ class GraphView:
         self.components = Components(self.screen)
         self.load_json()
         self.drawer = Drawer(self.screen, 0, 0, self.WINDOW_WIDTH - 200, self.WINDOW_HEIGHT, self.users)
-        self.menu = SideMenu(self.screen, self.WINDOW_WIDTH - 200, 0, 200, self.WINDOW_HEIGHT, self.components.GRAY, self.users, self.drawer)
+        self.menu = SideMenu(self.screen, self.WINDOW_WIDTH - 200, 0, 200, self.WINDOW_HEIGHT, self.components.GRAY, self.users, self.communities, self.drawer)
 
     def run(self):
         while True:

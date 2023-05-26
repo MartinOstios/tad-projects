@@ -2,13 +2,14 @@ from components import Components
 import pygame
 from combo_box import ComboBox
 class SideMenu:
-    def __init__(self, screen, x, y, width, height, color, users, drawer):
+    def __init__(self, screen, x, y, width, height, color, users, communities, drawer):
         self.screen = screen
         self.x = x
         self.y = y
         self.width = width
         self.height = height
         self.users = users
+        self.communities = communities
         self.drawer = drawer
         self.user_names = [str(user["name"]) for user in self.users]
         self.color = color
@@ -23,11 +24,11 @@ class SideMenu:
         # La cantidad de nombres que se muestra está limitada a 8
         self.combo_user_upper = ComboBox(self.screen, self.user_names[0:8], self.rect_combo_user_upper, self.components.BLACK, "Arial", 15, 7, self.components.WHITE, self.components.WHITE, 30, "Usuario")
         self.rect_combo_graph_upper = pygame.Rect(1211, 178, 177, 35)
-        self.combo_graph_upper = ComboBox(self.screen, ["Red de amigos", "Red de familia", "Grupos y comunidades"], self.rect_combo_graph_upper, self.components.BLACK, "Arial", 15, 7, self.components.WHITE, self.components.WHITE, 30, "Seleccione")
+        self.combo_graph_upper = ComboBox(self.screen, ["Red de amigos", "Red de familia", "Red de comunidades"], self.rect_combo_graph_upper, self.components.BLACK, "Arial", 15, 7, self.components.WHITE, self.components.WHITE, 30, "Seleccione")
         self.rect_combo_friends_lower = pygame.Rect(1211, 366, 177, 35)
         self.combo_friends_lower = ComboBox(self.screen, [], self.rect_combo_friends_lower, self.components.BLACK, "Arial", 15, 7, self.components.WHITE, self.components.WHITE, 30, "Amigo")
         self.rect_combo_graph_lower = pygame.Rect(1211, 477, 177, 35)
-        self.combo_graph_lower = ComboBox(self.screen, ["Comunidades en común", "Grupos en común"], self.rect_combo_graph_lower, self.components.BLACK, "Arial", 15, 7, self.components.WHITE, self.components.WHITE, 30, "Seleccione")
+        self.combo_graph_lower = ComboBox(self.screen, ["Comunidades en común"], self.rect_combo_graph_lower, self.components.BLACK, "Arial", 15, 7, self.components.WHITE, self.components.WHITE, 30, "Seleccione")
     
     def draw(self):
         self.isAcceptButtonUpperClicked()
@@ -101,8 +102,18 @@ class SideMenu:
             if self.rect_button_accept_lower.collidepoint(pygame.mouse.get_pos()) and not self.rect_button_accept_lower_clicked:
                 self.rect_button_accept_lower_clicked = True
                 if not self.combo_user_upper.combo_open and not self.combo_graph_upper.combo_open and not self.combo_friends_lower.combo_open and not self.combo_graph_lower.combo_open:
-                    #print("Click accept de abajo")
-                    pass
+                    print("Click accept de abajo")
+                    if self.combo_friends_lower.getIndex() != -1:
+                        # Obtiene el valor del combo
+                        user_selected = self.combo_user_upper.getIndex()
+                        friend_selected = self.combo_friends_lower.getIndex()
+                        if self.combo_graph_lower.getIndex() != -1:
+                            graph_selected = self.combo_graph_lower.getIndex()
+                            self.updateGraphCommunities(user_selected, friend_selected, graph_selected)
+                        else:
+                            print("Seleccione tipo de grafo")
+                    else:
+                        print("Seleccione un amigo")
 
         if not pygame.mouse.get_pressed()[0]:
             self.rect_button_accept_lower_clicked = False
@@ -150,3 +161,39 @@ class SideMenu:
         relationships[user["id"]] = id_family
         self.drawer.set_data([user] + family, relationships)
         '''
+    
+    def updateGraphCommunities(self, user1, user2, graph):
+        print(f"Se debe dibujar el grafo {graph} respecto a los usuarios: {user1} - {user2}")
+        if graph == 0:
+            print("Comunidades en común")
+            self.getInCommonCommunitiesNetwork(user1, user2)
+    
+    def getInCommonCommunitiesNetwork(self, user_id_1, user_id_2):
+        common_communities = []
+        user = self.users[user_id_1]
+        friend = user["friends"][user_id_2]
+        friend = self.users[friend["id"] - 1]
+        print(user)
+        print("-----------------------------")
+        print(friend)
+        print("-----------------")
+        #print(self.communities)
+        for communitie in self.communities:
+            member1 = False
+            member2 = False
+            members = communitie["members"]
+            print(f"Nombre comunidad: {communitie['name']}")
+            for member in members:
+                if member['name'] == user['name']:
+                    member1 = True
+                    print("Se encuentra el usuario 1")
+                if member['name'] == friend['name']:
+                    member2 = True
+                    print("Se encuentra el usuario 2")
+            print("---------------------------------")
+            if member1 and member2:
+                print(f"Ambos usuarios se encuentran en la comunidad {communitie['name']}")
+                common_communities.append(communitie)
+        print(common_communities)
+
+        self.drawer.set_data([user] + [friend] + common_communities, "communities")

@@ -1,0 +1,842 @@
+{
+  "Bogot\u00e1 - Medell\u00edn": {
+    "distancia": "419 km",
+    "tiempo": "8 hours 42 mins"
+  },
+  "Bogot\u00e1 - Cali": {
+    "distancia": "507 km",
+    "tiempo": "10 hours 22 mins"
+  },
+  "Bogot\u00e1 - Barranquilla": {
+    "distancia": "1,010 km",
+    "tiempo": "18 hours 7 mins"
+  },
+  "Bogot\u00e1 - Cartagena": {
+    "distancia": "1,041 km",
+    "tiempo": "18 hours 41 mins"
+  },
+  "Bogot\u00e1 - Pereira": {
+    "distancia": "318 km",
+    "tiempo": "7 hours 11 mins"
+  },
+  "Bogot\u00e1 - Manizales": {
+    "distancia": "294 km",
+    "tiempo": "7 hours 19 mins"
+  },
+  "Bogot\u00e1 - Armenia": {
+    "distancia": "279 km",
+    "tiempo": "6 hours 30 mins"
+  },
+  "Bogot\u00e1 - Bucaramanga": {
+    "distancia": "426 km",
+    "tiempo": "9 hours 7 mins"
+  },
+  "Bogot\u00e1 - Pasto": {
+    "distancia": "827 km",
+    "tiempo": "17 hours 1 min"
+  },
+  "Bogot\u00e1 - Neiva": {
+    "distancia": "317 km",
+    "tiempo": "5 hours 53 mins"
+  },
+  "Bogot\u00e1 - Santa Marta": {
+    "distancia": "964 km",
+    "tiempo": "17 hours 9 mins"
+  },
+  "Bogot\u00e1 - C\u00facuta": {
+    "distancia": "569 km",
+    "tiempo": "12 hours 13 mins"
+  },
+  "Bogot\u00e1 - Valledupar": {
+    "distancia": "864 km",
+    "tiempo": "14 hours 56 mins"
+  },
+  "Bogot\u00e1 - Monter\u00eda": {
+    "distancia": "754 km",
+    "tiempo": "15 hours 4 mins"
+  },
+  "Bogot\u00e1 - Ibagu\u00e9": {
+    "distancia": "203 km",
+    "tiempo": "4 hours 20 mins"
+  },
+  "Bogot\u00e1 - Villavicencio": {
+    "distancia": "125 km",
+    "tiempo": "3 hours 4 mins"
+  },
+  "Bogot\u00e1 - Sincelejo": {
+    "distancia": "821 km",
+    "tiempo": "16 hours 26 mins"
+  },
+  "Bogot\u00e1 - Popay\u00e1n": {
+    "distancia": "582 km",
+    "tiempo": "11 hours 46 mins"
+  },
+  "Bogot\u00e1 - Tunja": {
+    "distancia": "141 km",
+    "tiempo": "2 hours 12 mins"
+  },
+  "Bogot\u00e1 - Quibd\u00f3": {
+    "distancia": "567 km",
+    "tiempo": "12 hours 43 mins"
+  },
+  "Medell\u00edn - Cali": {
+    "distancia": "409 km",
+    "tiempo": "7 hours 30 mins"
+  },
+  "Medell\u00edn - Barranquilla": {
+    "distancia": "705 km",
+    "tiempo": "13 hours 29 mins"
+  },
+  "Medell\u00edn - Cartagena": {
+    "distancia": "640 km",
+    "tiempo": "11 hours 58 mins"
+  },
+  "Medell\u00edn - Pereira": {
+    "distancia": "212 km",
+    "tiempo": "4 hours 33 mins"
+  },
+  "Medell\u00edn - Manizales": {
+    "distancia": "196 km",
+    "tiempo": "4 hours 14 mins"
+  },
+  "Medell\u00edn - Armenia": {
+    "distancia": "256 km",
+    "tiempo": "5 hours 28 mins"
+  },
+  "Medell\u00edn - Bucaramanga": {
+    "distancia": "380 km",
+    "tiempo": "7 hours 7 mins"
+  },
+  "Medell\u00edn - Pasto": {
+    "distancia": "782 km",
+    "tiempo": "14 hours 59 mins"
+  },
+  "Medell\u00edn - Neiva": {
+    "distancia": "578 km",
+    "tiempo": "9 hours 32 mins"
+  },
+  "Medell\u00edn - Santa Marta": {
+    "distancia": "832 km",
+    "tiempo": "14 hours 36 mins"
+  },
+  "Medell\u00edn - C\u00facuta": {
+    "distancia": "580 km",
+    "tiempo": "12 hours 25 mins"
+  },
+  "Medell\u00edn - Valledupar": {
+    "distancia": "732 km",
+    "tiempo": "12 hours 23 mins"
+  },
+  "Medell\u00edn - Monter\u00eda": {
+    "distancia": "403 km",
+    "tiempo": "7 hours 50 mins"
+  },
+  "Medell\u00edn - Ibagu\u00e9": {
+    "distancia": "323 km",
+    "tiempo": "7 hours 7 mins"
+  },
+  "Medell\u00edn - Villavicencio": {
+    "distancia": "532 km",
+    "tiempo": "11 hours 29 mins"
+  },
+  "Medell\u00edn - Sincelejo": {
+    "distancia": "470 km",
+    "tiempo": "9 hours 11 mins"
+  },
+  "Medell\u00edn - Popay\u00e1n": {
+    "distancia": "538 km",
+    "tiempo": "9 hours 44 mins"
+  },
+  "Medell\u00edn - Tunja": {
+    "distancia": "410 km",
+    "tiempo": "8 hours 37 mins"
+  },
+  "Medell\u00edn - Quibd\u00f3": {
+    "distancia": "229 km",
+    "tiempo": "5 hours 51 mins"
+  },
+  "Cali - Barranquilla": {
+    "distancia": "1,113 km",
+    "tiempo": "20 hours 42 mins"
+  },
+  "Cali - Cartagena": {
+    "distancia": "1,048 km",
+    "tiempo": "19 hours 12 mins"
+  },
+  "Cali - Pereira": {
+    "distancia": "209 km",
+    "tiempo": "3 hours 29 mins"
+  },
+  "Cali - Manizales": {
+    "distancia": "261 km",
+    "tiempo": "4 hours 29 mins"
+  },
+  "Cali - Armenia": {
+    "distancia": "228 km",
+    "tiempo": "3 hours 57 mins"
+  },
+  "Cali - Bucaramanga": {
+    "distancia": "788 km",
+    "tiempo": "14 hours 20 mins"
+  },
+  "Cali - Pasto": {
+    "distancia": "382 km",
+    "tiempo": "8 hours 13 mins"
+  },
+  "Cali - Neiva": {
+    "distancia": "384 km",
+    "tiempo": "8 hours 27 mins"
+  },
+  "Cali - Santa Marta": {
+    "distancia": "1,240 km",
+    "tiempo": "21 hours 50 mins"
+  },
+  "Cali - C\u00facuta": {
+    "distancia": "988 km",
+    "tiempo": "19 hours 38 mins"
+  },
+  "Cali - Valledupar": {
+    "distancia": "1,140 km",
+    "tiempo": "19 hours 36 mins"
+  },
+  "Cali - Monter\u00eda": {
+    "distancia": "811 km",
+    "tiempo": "15 hours 4 mins"
+  },
+  "Cali - Ibagu\u00e9": {
+    "distancia": "300 km",
+    "tiempo": "5 hours 50 mins"
+  },
+  "Cali - Villavicencio": {
+    "distancia": "585 km",
+    "tiempo": "12 hours 1 min"
+  },
+  "Cali - Sincelejo": {
+    "distancia": "878 km",
+    "tiempo": "16 hours 25 mins"
+  },
+  "Cali - Popay\u00e1n": {
+    "distancia": "138 km",
+    "tiempo": "2 hours 58 mins"
+  },
+  "Cali - Tunja": {
+    "distancia": "635 km",
+    "tiempo": "11 hours 53 mins"
+  },
+  "Cali - Quibd\u00f3": {
+    "distancia": "425 km",
+    "tiempo": "8 hours 19 mins"
+  },
+  "Barranquilla - Cartagena": {
+    "distancia": "126 km",
+    "tiempo": "2 hours 44 mins"
+  },
+  "Barranquilla - Pereira": {
+    "distancia": "933 km",
+    "tiempo": "17 hours 46 mins"
+  },
+  "Barranquilla - Manizales": {
+    "distancia": "916 km",
+    "tiempo": "17 hours 28 mins"
+  },
+  "Barranquilla - Armenia": {
+    "distancia": "977 km",
+    "tiempo": "18 hours 42 mins"
+  },
+  "Barranquilla - Bucaramanga": {
+    "distancia": "593 km",
+    "tiempo": "11 hours 17 mins"
+  },
+  "Barranquilla - Pasto": {
+    "distancia": "1,503 km",
+    "tiempo": "1 day 4 hours"
+  },
+  "Barranquilla - Neiva": {
+    "distancia": "1,171 km",
+    "tiempo": "19 hours 11 mins"
+  },
+  "Barranquilla - Santa Marta": {
+    "distancia": "105 km",
+    "tiempo": "2 hours 14 mins"
+  },
+  "Barranquilla - C\u00facuta": {
+    "distancia": "684 km",
+    "tiempo": "14 hours 11 mins"
+  },
+  "Barranquilla - Valledupar": {
+    "distancia": "371 km",
+    "tiempo": "6 hours 53 mins"
+  },
+  "Barranquilla - Monter\u00eda": {
+    "distancia": "371 km",
+    "tiempo": "6 hours 18 mins"
+  },
+  "Barranquilla - Ibagu\u00e9": {
+    "distancia": "1,015 km",
+    "tiempo": "17 hours 16 mins"
+  },
+  "Barranquilla - Villavicencio": {
+    "distancia": "1,125 km",
+    "tiempo": "21 hours 8 mins"
+  },
+  "Barranquilla - Sincelejo": {
+    "distancia": "255 km",
+    "tiempo": "4 hours 24 mins"
+  },
+  "Barranquilla - Popay\u00e1n": {
+    "distancia": "1,259 km",
+    "tiempo": "22 hours 57 mins"
+  },
+  "Barranquilla - Tunja": {
+    "distancia": "868 km",
+    "tiempo": "16 hours 30 mins"
+  },
+  "Barranquilla - Quibd\u00f3": {
+    "distancia": "950 km",
+    "tiempo": "19 hours 5 mins"
+  },
+  "Cartagena - Pereira": {
+    "distancia": "850 km",
+    "tiempo": "16 hours 24 mins"
+  },
+  "Cartagena - Manizales": {
+    "distancia": "833 km",
+    "tiempo": "16 hours 5 mins"
+  },
+  "Cartagena - Armenia": {
+    "distancia": "894 km",
+    "tiempo": "17 hours 19 mins"
+  },
+  "Cartagena - Bucaramanga": {
+    "distancia": "622 km",
+    "tiempo": "12 hours 2 mins"
+  },
+  "Cartagena - Pasto": {
+    "distancia": "1,420 km",
+    "tiempo": "1 day 3 hours"
+  },
+  "Cartagena - Neiva": {
+    "distancia": "1,200 km",
+    "tiempo": "19 hours 55 mins"
+  },
+  "Cartagena - Santa Marta": {
+    "distancia": "226 km",
+    "tiempo": "4 hours 27 mins"
+  },
+  "Cartagena - C\u00facuta": {
+    "distancia": "713 km",
+    "tiempo": "14 hours 56 mins"
+  },
+  "Cartagena - Valledupar": {
+    "distancia": "440 km",
+    "tiempo": "8 hours 13 mins"
+  },
+  "Cartagena - Monter\u00eda": {
+    "distancia": "244 km",
+    "tiempo": "4 hours 29 mins"
+  },
+  "Cartagena - Ibagu\u00e9": {
+    "distancia": "1,044 km",
+    "tiempo": "18 hours 1 min"
+  },
+  "Cartagena - Villavicencio": {
+    "distancia": "1,155 km",
+    "tiempo": "21 hours 53 mins"
+  },
+  "Cartagena - Sincelejo": {
+    "distancia": "174 km",
+    "tiempo": "3 hours 2 mins"
+  },
+  "Cartagena - Popay\u00e1n": {
+    "distancia": "1,176 km",
+    "tiempo": "21 hours 35 mins"
+  },
+  "Cartagena - Tunja": {
+    "distancia": "898 km",
+    "tiempo": "17 hours 15 mins"
+  },
+  "Cartagena - Quibd\u00f3": {
+    "distancia": "867 km",
+    "tiempo": "17 hours 42 mins"
+  },
+  "Pereira - Manizales": {
+    "distancia": "53.3 km",
+    "tiempo": "1 hour 11 mins"
+  },
+  "Pereira - Armenia": {
+    "distancia": "45.9 km",
+    "tiempo": "1 hour 3 mins"
+  },
+  "Pereira - Bucaramanga": {
+    "distancia": "560 km",
+    "tiempo": "11 hours 7 mins"
+  },
+  "Pereira - Pasto": {
+    "distancia": "582 km",
+    "tiempo": "10 hours 59 mins"
+  },
+  "Pereira - Neiva": {
+    "distancia": "318 km",
+    "tiempo": "5 hours 38 mins"
+  },
+  "Pereira - Santa Marta": {
+    "distancia": "1,013 km",
+    "tiempo": "18 hours 37 mins"
+  },
+  "Pereira - C\u00facuta": {
+    "distancia": "760 km",
+    "tiempo": "16 hours 25 mins"
+  },
+  "Pereira - Valledupar": {
+    "distancia": "912 km",
+    "tiempo": "16 hours 23 mins"
+  },
+  "Pereira - Monter\u00eda": {
+    "distancia": "614 km",
+    "tiempo": "12 hours 7 mins"
+  },
+  "Pereira - Ibagu\u00e9": {
+    "distancia": "113 km",
+    "tiempo": "2 hours 41 mins"
+  },
+  "Pereira - Villavicencio": {
+    "distancia": "397 km",
+    "tiempo": "8 hours 52 mins"
+  },
+  "Pereira - Sincelejo": {
+    "distancia": "681 km",
+    "tiempo": "13 hours 28 mins"
+  },
+  "Pereira - Popay\u00e1n": {
+    "distancia": "338 km",
+    "tiempo": "5 hours 44 mins"
+  },
+  "Pereira - Tunja": {
+    "distancia": "447 km",
+    "tiempo": "8 hours 45 mins"
+  },
+  "Pereira - Quibd\u00f3": {
+    "distancia": "254 km",
+    "tiempo": "5 hours 52 mins"
+  },
+  "Manizales - Armenia": {
+    "distancia": "97.1 km",
+    "tiempo": "2 hours 8 mins"
+  },
+  "Manizales - Bucaramanga": {
+    "distancia": "507 km",
+    "tiempo": "9 hours 59 mins"
+  },
+  "Manizales - Pasto": {
+    "distancia": "632 km",
+    "tiempo": "11 hours 57 mins"
+  },
+  "Manizales - Neiva": {
+    "distancia": "369 km",
+    "tiempo": "6 hours 44 mins"
+  },
+  "Manizales - Santa Marta": {
+    "distancia": "959 km",
+    "tiempo": "17 hours 28 mins"
+  },
+  "Manizales - C\u00facuta": {
+    "distancia": "706 km",
+    "tiempo": "15 hours 17 mins"
+  },
+  "Manizales - Valledupar": {
+    "distancia": "858 km",
+    "tiempo": "15 hours 15 mins"
+  },
+  "Manizales - Monter\u00eda": {
+    "distancia": "597 km",
+    "tiempo": "11 hours 50 mins"
+  },
+  "Manizales - Ibagu\u00e9": {
+    "distancia": "164 km",
+    "tiempo": "3 hours 47 mins"
+  },
+  "Manizales - Villavicencio": {
+    "distancia": "410 km",
+    "tiempo": "9 hours 55 mins"
+  },
+  "Manizales - Sincelejo": {
+    "distancia": "664 km",
+    "tiempo": "13 hours 11 mins"
+  },
+  "Manizales - Popay\u00e1n": {
+    "distancia": "388 km",
+    "tiempo": "6 hours 42 mins"
+  },
+  "Manizales - Tunja": {
+    "distancia": "421 km",
+    "tiempo": "9 hours 17 mins"
+  },
+  "Manizales - Quibd\u00f3": {
+    "distancia": "273 km",
+    "tiempo": "6 hours 22 mins"
+  },
+  "Armenia - Bucaramanga": {
+    "distancia": "582 km",
+    "tiempo": "10 hours 39 mins"
+  },
+  "Armenia - Pasto": {
+    "distancia": "601 km",
+    "tiempo": "11 hours 24 mins"
+  },
+  "Armenia - Neiva": {
+    "distancia": "278 km",
+    "tiempo": "4 hours 55 mins"
+  },
+  "Armenia - Santa Marta": {
+    "distancia": "1,035 km",
+    "tiempo": "18 hours 8 mins"
+  },
+  "Armenia - C\u00facuta": {
+    "distancia": "782 km",
+    "tiempo": "15 hours 56 mins"
+  },
+  "Armenia - Valledupar": {
+    "distancia": "934 km",
+    "tiempo": "15 hours 55 mins"
+  },
+  "Armenia - Monter\u00eda": {
+    "distancia": "659 km",
+    "tiempo": "13 hours 8 mins"
+  },
+  "Armenia - Ibagu\u00e9": {
+    "distancia": "73.5 km",
+    "tiempo": "1 hour 59 mins"
+  },
+  "Armenia - Villavicencio": {
+    "distancia": "358 km",
+    "tiempo": "8 hours 10 mins"
+  },
+  "Armenia - Sincelejo": {
+    "distancia": "726 km",
+    "tiempo": "14 hours 29 mins"
+  },
+  "Armenia - Popay\u00e1n": {
+    "distancia": "357 km",
+    "tiempo": "6 hours 9 mins"
+  },
+  "Armenia - Tunja": {
+    "distancia": "408 km",
+    "tiempo": "8 hours 2 mins"
+  },
+  "Armenia - Quibd\u00f3": {
+    "distancia": "294 km",
+    "tiempo": "6 hours 35 mins"
+  },
+  "Bucaramanga - Pasto": {
+    "distancia": "1,136 km",
+    "tiempo": "21 hours 52 mins"
+  },
+  "Bucaramanga - Neiva": {
+    "distancia": "673 km",
+    "tiempo": "10 hours 53 mins"
+  },
+  "Bucaramanga - Santa Marta": {
+    "distancia": "546 km",
+    "tiempo": "10 hours 39 mins"
+  },
+  "Bucaramanga - C\u00facuta": {
+    "distancia": "199 km",
+    "tiempo": "5 hours 25 mins"
+  },
+  "Bucaramanga - Valledupar": {
+    "distancia": "445 km",
+    "tiempo": "8 hours 26 mins"
+  },
+  "Bucaramanga - Monter\u00eda": {
+    "distancia": "614 km",
+    "tiempo": "11 hours 53 mins"
+  },
+  "Bucaramanga - Ibagu\u00e9": {
+    "distancia": "517 km",
+    "tiempo": "8 hours 59 mins"
+  },
+  "Bucaramanga - Villavicencio": {
+    "distancia": "546 km",
+    "tiempo": "11 hours 48 mins"
+  },
+  "Bucaramanga - Sincelejo": {
+    "distancia": "498 km",
+    "tiempo": "9 hours 58 mins"
+  },
+  "Bucaramanga - Popay\u00e1n": {
+    "distancia": "892 km",
+    "tiempo": "16 hours 37 mins"
+  },
+  "Bucaramanga - Tunja": {
+    "distancia": "282 km",
+    "tiempo": "6 hours 39 mins"
+  },
+  "Bucaramanga - Quibd\u00f3": {
+    "distancia": "609 km",
+    "tiempo": "12 hours 50 mins"
+  },
+  "Pasto - Neiva": {
+    "distancia": "517 km",
+    "tiempo": "11 hours 19 mins"
+  },
+  "Pasto - Santa Marta": {
+    "distancia": "1,617 km",
+    "tiempo": "1 day 5 hours"
+  },
+  "Pasto - C\u00facuta": {
+    "distancia": "1,364 km",
+    "tiempo": "1 day 3 hours"
+  },
+  "Pasto - Valledupar": {
+    "distancia": "1,516 km",
+    "tiempo": "1 day 3 hours"
+  },
+  "Pasto - Monter\u00eda": {
+    "distancia": "1,187 km",
+    "tiempo": "22 hours 20 mins"
+  },
+  "Pasto - Ibagu\u00e9": {
+    "distancia": "676 km",
+    "tiempo": "13 hours 6 mins"
+  },
+  "Pasto - Villavicencio": {
+    "distancia": "920 km",
+    "tiempo": "19 hours 2 mins"
+  },
+  "Pasto - Sincelejo": {
+    "distancia": "1,254 km",
+    "tiempo": "23 hours 41 mins"
+  },
+  "Pasto - Popay\u00e1n": {
+    "distancia": "249 km",
+    "tiempo": "5 hours 10 mins"
+  },
+  "Pasto - Tunja": {
+    "distancia": "969 km",
+    "tiempo": "19 hours 0 mins"
+  },
+  "Pasto - Quibd\u00f3": {
+    "distancia": "802 km",
+    "tiempo": "15 hours 35 mins"
+  },
+  "Neiva - Santa Marta": {
+    "distancia": "1,123 km",
+    "tiempo": "18 hours 15 mins"
+  },
+  "Neiva - C\u00facuta": {
+    "distancia": "870 km",
+    "tiempo": "16 hours 3 mins"
+  },
+  "Neiva - Valledupar": {
+    "distancia": "1,022 km",
+    "tiempo": "16 hours 2 mins"
+  },
+  "Neiva - Monter\u00eda": {
+    "distancia": "913 km",
+    "tiempo": "16 hours 10 mins"
+  },
+  "Neiva - Ibagu\u00e9": {
+    "distancia": "210 km",
+    "tiempo": "3 hours 11 mins"
+  },
+  "Neiva - Villavicencio": {
+    "distancia": "403 km",
+    "tiempo": "7 hours 58 mins"
+  },
+  "Neiva - Sincelejo": {
+    "distancia": "980 km",
+    "tiempo": "17 hours 31 mins"
+  },
+  "Neiva - Popay\u00e1n": {
+    "distancia": "268 km",
+    "tiempo": "6 hours 14 mins"
+  },
+  "Neiva - Tunja": {
+    "distancia": "452 km",
+    "tiempo": "7 hours 57 mins"
+  },
+  "Neiva - Quibd\u00f3": {
+    "distancia": "574 km",
+    "tiempo": "11 hours 34 mins"
+  },
+  "Santa Marta - C\u00facuta": {
+    "distancia": "637 km",
+    "tiempo": "13 hours 14 mins"
+  },
+  "Santa Marta - Valledupar": {
+    "distancia": "289 km",
+    "tiempo": "5 hours 47 mins"
+  },
+  "Santa Marta - Monter\u00eda": {
+    "distancia": "439 km",
+    "tiempo": "7 hours 50 mins"
+  },
+  "Santa Marta - Ibagu\u00e9": {
+    "distancia": "968 km",
+    "tiempo": "16 hours 18 mins"
+  },
+  "Santa Marta - Villavicencio": {
+    "distancia": "1,079 km",
+    "tiempo": "20 hours 10 mins"
+  },
+  "Santa Marta - Sincelejo": {
+    "distancia": "323 km",
+    "tiempo": "5 hours 55 mins"
+  },
+  "Santa Marta - Popay\u00e1n": {
+    "distancia": "1,344 km",
+    "tiempo": "23 hours 57 mins"
+  },
+  "Santa Marta - Tunja": {
+    "distancia": "821 km",
+    "tiempo": "15 hours 33 mins"
+  },
+  "Santa Marta - Quibd\u00f3": {
+    "distancia": "1,060 km",
+    "tiempo": "20 hours 10 mins"
+  },
+  "C\u00facuta - Valledupar": {
+    "distancia": "536 km",
+    "tiempo": "11 hours 32 mins"
+  },
+  "C\u00facuta - Monter\u00eda": {
+    "distancia": "704 km",
+    "tiempo": "15 hours 0 mins"
+  },
+  "C\u00facuta - Ibagu\u00e9": {
+    "distancia": "714 km",
+    "tiempo": "14 hours 3 mins"
+  },
+  "C\u00facuta - Villavicencio": {
+    "distancia": "690 km",
+    "tiempo": "15 hours 6 mins"
+  },
+  "C\u00facuta - Sincelejo": {
+    "distancia": "588 km",
+    "tiempo": "13 hours 5 mins"
+  },
+  "C\u00facuta - Popay\u00e1n": {
+    "distancia": "1,090 km",
+    "tiempo": "21 hours 41 mins"
+  },
+  "C\u00facuta - Tunja": {
+    "distancia": "430 km",
+    "tiempo": "10 hours 9 mins"
+  },
+  "C\u00facuta - Quibd\u00f3": {
+    "distancia": "806 km",
+    "tiempo": "17 hours 54 mins"
+  },
+  "Valledupar - Monter\u00eda": {
+    "distancia": "456 km",
+    "tiempo": "8 hours 54 mins"
+  },
+  "Valledupar - Ibagu\u00e9": {
+    "distancia": "870 km",
+    "tiempo": "14 hours 12 mins"
+  },
+  "Valledupar - Villavicencio": {
+    "distancia": "981 km",
+    "tiempo": "18 hours 4 mins"
+  },
+  "Valledupar - Sincelejo": {
+    "distancia": "340 km",
+    "tiempo": "6 hours 59 mins"
+  },
+  "Valledupar - Popay\u00e1n": {
+    "distancia": "1,246 km",
+    "tiempo": "21 hours 50 mins"
+  },
+  "Valledupar - Tunja": {
+    "distancia": "724 km",
+    "tiempo": "13 hours 26 mins"
+  },
+  "Valledupar - Quibd\u00f3": {
+    "distancia": "963 km",
+    "tiempo": "18 hours 3 mins"
+  },
+  "Monter\u00eda - Ibagu\u00e9": {
+    "distancia": "724 km",
+    "tiempo": "14 hours 52 mins"
+  },
+  "Monter\u00eda - Villavicencio": {
+    "distancia": "868 km",
+    "tiempo": "18 hours 17 mins"
+  },
+  "Monter\u00eda - Sincelejo": {
+    "distancia": "119 km",
+    "tiempo": "2 hours 9 mins"
+  },
+  "Monter\u00eda - Popay\u00e1n": {
+    "distancia": "939 km",
+    "tiempo": "17 hours 29 mins"
+  },
+  "Monter\u00eda - Tunja": {
+    "distancia": "656 km",
+    "tiempo": "14 hours 22 mins"
+  },
+  "Monter\u00eda - Quibd\u00f3": {
+    "distancia": "630 km",
+    "tiempo": "13 hours 36 mins"
+  },
+  "Ibagu\u00e9 - Villavicencio": {
+    "distancia": "291 km",
+    "tiempo": "6 hours 32 mins"
+  },
+  "Ibagu\u00e9 - Sincelejo": {
+    "distancia": "819 km",
+    "tiempo": "15 hours 45 mins"
+  },
+  "Ibagu\u00e9 - Popay\u00e1n": {
+    "distancia": "437 km",
+    "tiempo": "8 hours 34 mins"
+  },
+  "Ibagu\u00e9 - Tunja": {
+    "distancia": "341 km",
+    "tiempo": "6 hours 24 mins"
+  },
+  "Ibagu\u00e9 - Quibd\u00f3": {
+    "distancia": "368 km",
+    "tiempo": "8 hours 42 mins"
+  },
+  "Villavicencio - Sincelejo": {
+    "distancia": "935 km",
+    "tiempo": "19 hours 20 mins"
+  },
+  "Villavicencio - Popay\u00e1n": {
+    "distancia": "670 km",
+    "tiempo": "13 hours 52 mins"
+  },
+  "Villavicencio - Tunja": {
+    "distancia": "262 km",
+    "tiempo": "5 hours 18 mins"
+  },
+  "Villavicencio - Quibd\u00f3": {
+    "distancia": "655 km",
+    "tiempo": "14 hours 50 mins"
+  },
+  "Sincelejo - Popay\u00e1n": {
+    "distancia": "1,006 km",
+    "tiempo": "18 hours 48 mins"
+  },
+  "Sincelejo - Tunja": {
+    "distancia": "774 km",
+    "tiempo": "15 hours 8 mins"
+  },
+  "Sincelejo - Quibd\u00f3": {
+    "distancia": "697 km",
+    "tiempo": "14 hours 55 mins"
+  },
+  "Popay\u00e1n - Tunja": {
+    "distancia": "723 km",
+    "tiempo": "13 hours 58 mins"
+  },
+  "Popay\u00e1n - Quibd\u00f3": {
+    "distancia": "556 km",
+    "tiempo": "10 hours 32 mins"
+  },
+  "Tunja - Quibd\u00f3": {
+    "distancia": "638 km",
+    "tiempo": "14 hours 22 mins"
+  }
+}

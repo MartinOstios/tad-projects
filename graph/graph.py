@@ -19,6 +19,7 @@ fake = Faker("es_CO")
 generator = ImagesApi()
 
 
+
 class GraphView:
     def __init__(self):
         self.USERS_QUANTITY = 10
